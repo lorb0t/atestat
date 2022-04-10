@@ -15,7 +15,7 @@ const Menu = () => (
     </p>
     <p>
       <a href="#about">
-        <p>About</p>
+        <p>Szolgaltatasok</p>
       </a>
     </p>
     <p>
@@ -25,12 +25,17 @@ const Menu = () => (
     </p>
     <p>
       <a href="#gallery">
-        <p>Gallery</p>
+        <p>About</p>
       </a>
     </p>
     <p>
       <a href="#contact">
         <p>Contact</p>
+      </a>
+    </p>
+    <p>
+      <a href="#contact">
+        <p>Gallery</p>
       </a>
     </p>
   </>

@@ -1,0 +1,121 @@
+/* FOOTER-HEADING STUFF */
+
+.footer {
+  background-color: rgb(52, 51, 51);
+}
+
+.footer-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footer-heading-explore,
+.footer-heading-contact,
+.footer-heading-follow,
+.footer-heading-legal,
+.footer-heading-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical_line {
+  margin-top: 30px;
+  border-left: 1px solid rgb(75, 75, 75);
+  height: 130px;
+}
+
+.footer-heading {
+  margin: 0 1rem 2rem 2rem;
+}
+
+.footer-heading-img {
+  margin-top: 2rem;
+}
+
+.footer-heading-img img {
+  height: 13vh;
+  width: 13vw;
+}
+
+.footer-heading-contact ul,
+.footer-heading-explore ul,
+.footer-heading-follow ul,
+.footer-heading-legal ul {
+  margin-top: 2rem;
+  list-style-type: none;
+  list-style: none;
+}
+
+.footer-heading-contact li,
+.footer-heading-explore li,
+.footer-heading-follow li,
+.footer-heading-legal li {
+  text-align: start;
+  color: gray;
+}
+
+.footer-heading-name h1 {
+  color: white;
+  margin-top: 2rem;
+}
+
+.footer-heading h3 {
+  color: white;
+}
+
+li {
+  margin-top: 0.5rem;
+}
+
+.usable_links {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: white;
+}
+
+/* DESIGN PART */
+
+.footer-design {
+  background-color: rgb(19, 19, 19);
+}
+
+.footer-design-para {
+  font-size: larger;
+  color: gray;
+  display: inline;
+  line-height: 2.5rem;
+}
+
+.inLine {
+  display: inline;
+}
+
+.footer-design a {
+  color: gray;
+  text-decoration: none;
+}
+
+.inLine:hover {
+  color: rgb(183, 163, 47);
+}
+
+@media screen and (max-width: 1260px) {
+  .vertical_line {
+    display: none;
+  }
+
+  .footer-heading {
+    flex-direction: column;
+  }
+
+  .footer-heading-explore,
+  .footer-heading-contact,
+  .footer-heading-follow,
+  .footer-heading-legal {
+    margin-top: 20px;
+  }
+}

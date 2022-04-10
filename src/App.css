@@ -9,6 +9,11 @@
   text-align: center;
 }
 
+.AppMain {
+  display: flex;
+  flex-direction: column;
+}
+
 .gradient__bg {
   background-color: black;
 }
