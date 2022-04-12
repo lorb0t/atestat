@@ -112,10 +112,33 @@ a:hover {
     flex-direction: column;
   }
 
+  .footer-heading-name,
   .footer-heading-explore,
   .footer-heading-contact,
   .footer-heading-follow,
   .footer-heading-legal {
-    margin-top: 20px;
+    margin-top: 3px;
+    margin-left: 0;
+  }
+
+  .footer-heading-img img {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-heading {
+    align-items: flex-start;
+    margin-left: 0;
+  }
+
+  .footer-heading-img {
+    align-items: center;
+  }
+  .footer-heading-img img {
+    margin-left: 2rem;
+    width: 55%;
+    height: auto;
   }
 }

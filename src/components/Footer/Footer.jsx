@@ -3,6 +3,8 @@ import "./Footer.css";
 import logo from "../../assets/Images/company_logo.png";
 import "../../assets/Animations/logo_woble.css";
 
+import { animateScroll as scroll } from "react-scroll";
+
 export const Footer = () => {
   return (
     <div className="footer section __padding">
@@ -95,7 +97,10 @@ export const Footer = () => {
       <div className="footer-design-main">
         <div className="footer-design">
           <p className="footer-design-para">
-            <span style={{ color: "white" }}>
+            <span
+              style={{ color: "white", cursor: "pointer" }}
+              onClick={scroll.scrollToTop}
+            >
               © 2022 Clean Speed&nbsp;&nbsp;&nbsp;
             </span>
             Created by:{" "}
@@ -109,7 +114,6 @@ export const Footer = () => {
               <a href="https://www.google.com/">
                 <p className="inLine">lorbot</p>
               </a>
-              {/* TODO: ugorjon fel mikor copyright jelre kattint */}
             </span>
           </p>
         </div>

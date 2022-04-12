@@ -11,7 +11,7 @@ const App = () => {
         <Navbar />
       </div>
 
-      <div className="header__bg" id="header">
+      <div className="header__bg" id="home">
         <Header />
       </div>
 

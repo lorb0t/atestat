@@ -2,87 +2,88 @@ import logo from "../../assets/Images/apple.svg";
 import globe from "../../assets/Images/globe.svg";
 import React, { useState } from "react";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
-import "./Navbar.css";
-import { grey } from "@mui/material/colors";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import "./Navbar.scss";
 
-const Menu = () => (
-  <>
-    <p>
-      <a href="#home">
-        <p>Home</p>
-      </a>
-    </p>
-    <p>
-      <a href="#about">
-        <p>Szolgaltatasok</p>
-      </a>
-    </p>
-    <p>
-      <a href="#video">
-        <p>Video</p>
-      </a>
-    </p>
-    <p>
-      <a href="#gallery">
-        <p>About</p>
-      </a>
-    </p>
-    <p>
-      <a href="#contact">
-        <p>Contact</p>
-      </a>
-    </p>
-    <p>
-      <a href="#contact">
-        <p>Gallery</p>
-      </a>
-    </p>
-  </>
-);
+import { Link, animateScroll as scroll } from "react-scroll";
+// import "bootstrap/dist/css/bootstrap.min.css";
 
 export const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-  const globe_primary = grey[500];
 
   return (
     <div className="navbar">
-      <div className="navbar-links">
+      <nav className="navbar-links">
         <div className="navbar-links_logo">
-          <h1>
+          <h1 onClick={scroll.scrollToTop}>
             <i>Clean Speed</i>
           </h1>
         </div>
         <div className="navbar-links_container">
-          <Menu />
+          {[
+            "home",
+            "szolgaltatasok",
+            "video",
+            "about",
+            "contact",
+            "gallery",
+          ].map((item) => (
+            <Link
+              activeClass="active"
+              to={item}
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              {item}
+            </Link>
+          ))}
         </div>
         <div className="navbar-links_globe">
           <img src={globe} alt="globe" />
         </div>
 
         <div className="navbar-menu">
-          {toggleMenu ? (
-            <RiCloseLine
-              color="#fff"
-              size={30}
-              onClick={() => setToggleMenu(false)}
-            />
-          ) : (
-            <RiMenuLine
-              color="#fff"
-              size={30}
-              onClick={() => setToggleMenu(true)}
-            />
-          )}
+          <RiMenuLine
+            color="#fff"
+            size={40}
+            onClick={() => setToggleMenu(true)}
+            cursor="pointer"
+          />
           {toggleMenu && (
             <div className="navbar-menu_container scale-up-center">
+              <RiCloseLine
+                color="#fff"
+                size={43}
+                onClick={() => setToggleMenu(false)}
+                className="navbar-menu-close-button"
+              />
               <div className="navbar-menu_container-links">
-                <Menu />
+                {[
+                  "home",
+                  "szolgaltatasok",
+                  "video",
+                  "about",
+                  "contact",
+                  "gallery",
+                ].map((item) => (
+                  <Link
+                    activeClass="active"
+                    to={item}
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration={500}
+                    onClick={() => setToggleMenu(false)}
+                  >
+                    {item}
+                  </Link>
+                ))}
               </div>
             </div>
           )}
         </div>
-      </div>
+      </nav>
     </div>
   );
 };
