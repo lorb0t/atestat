@@ -1,5 +1,5 @@
 .about_main {
-  background-image: url("../../assets/Images/AboveClouds.png");
+  background-image: url("../../assets/Images/totally-not-stolen-background2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,9 +12,9 @@
   align-items: center;
 
   .about-content {
-    background-color: rgba(0, 0, 0, 0.542);
+    background-color: rgba(0, 0, 0, 0.35202);
     border-radius: 15px;
-    box-shadow: 7px 7px 7px 7px black;
+    box-shadow: 7px 7px 7px 7px blacks;
 
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@
 
     .about-text {
       align-items: center;
-      padding: 1.5rem;
+      padding-top: 1.5rem;
       padding-left: 20rem;
       padding-right: 20rem;
 
@@ -42,10 +42,92 @@
       }
 
       p {
-        padding: 2rem;
+        padding-top: 2rem;
         border-radius: 5px;
         font-size: 20px;
       }
     }
+
+    .about-follow {
+      display: grid;
+      grid-template-columns: 5rem 5rem 5rem;
+      grid-gap: 2rem;
+      margin: 1em;
+      margin-bottom: 1.5rem;
+
+      $Size-font: 50px;
+      .to-you {
+        font-family: "Roboto", sans-serif;
+        color: #ccc;
+        display: inline-block;
+        font-size: $Size-font;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+
+        &:hover {
+          animation: circle-anim 0.3s ease forwards;
+          transition: all 0.4s ease;
+          background: red;
+        }
+      }
+
+      .to-face {
+        font-family: "Roboto", sans-serif;
+        color: #ccc;
+        display: inline-block;
+        font-size: $Size-font;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+
+        &:hover {
+          animation: circle-anim 0.3s ease forwards;
+          transition: all 0.4s ease;
+          background: #4267b2;
+        }
+      }
+
+      .to-insta {
+        font-family: "Roboto", sans-serif;
+        color: #ccc;
+        display: inline-block;
+        font-size: $Size-font;
+        border-radius: 50%;
+        transition: all 0.2s ease;
+
+        &:hover {
+          animation: circle-anim 0.3s ease forwards;
+          transition: all 0.4s ease;
+          background: rgb(64, 93, 230);
+          background: linear-gradient(
+            215deg,
+            rgba(64, 93, 230, 1) 0%,
+            rgba(88, 81, 216, 1) 14%,
+            rgba(131, 58, 180, 1) 28%,
+            rgba(193, 53, 132, 1) 38%,
+            rgba(225, 48, 108, 1) 47%,
+            rgba(253, 29, 29, 1) 57%,
+            rgba(245, 96, 64, 1) 66%,
+            rgba(247, 119, 55, 1) 75%,
+            rgba(252, 175, 69, 1) 83%,
+            rgba(255, 220, 128, 1) 100%
+          );
+        }
+      }
+    }
+  }
+}
+
+@keyframes circle-anim {
+  0% {
+  }
+
+  90% {
+    padding: 0.35em;
+    margin: -0.35em;
+  }
+
+  100% {
+    padding: 0.25em;
+    margin: -0.25em;
   }
 }

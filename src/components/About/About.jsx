@@ -1,6 +1,13 @@
 import React from "react";
 import "./About.scss";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faYoutube,
+  faFacebook,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
+
 export const About = () => {
   return (
     <div className="about_main">
@@ -18,7 +25,22 @@ export const About = () => {
           </p>
         </div>
         <div className="about-follow">
-          <div className="facebook"></div>
+          <div className="youtube">
+            <a href="#">
+              <FontAwesomeIcon icon={faYoutube} className="to-you" />
+            </a>
+          </div>
+          <div className="facebook">
+            <a href="#">
+              <FontAwesomeIcon icon={faFacebook} className="to-face" />
+            </a>
+          </div>
+          <div className="instagram">
+            <a href="#">
+              <FontAwesomeIcon icon={faInstagram} className="to-insta" />
+            </a>
+          </div>
+          {/* TODO: rakd be a hulye linkeket */}
         </div>
       </div>
     </div>
