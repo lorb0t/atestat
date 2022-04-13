@@ -1,0 +1,51 @@
+.about_main {
+  background-image: url("../../assets/Images/AboveClouds.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 48vh;
+  width: auto;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .about-content {
+    background-color: rgba(0, 0, 0, 0.542);
+    border-radius: 15px;
+    box-shadow: 7px 7px 7px 7px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-left: 10%;
+    margin-right: 10%;
+
+    .about-text {
+      align-items: center;
+      padding: 1.5rem;
+      padding-left: 20rem;
+      padding-right: 20rem;
+
+      h1,
+      p {
+        color: white;
+      }
+
+      h1 {
+        font-size: 65px;
+        letter-spacing: 15px;
+        text-transform: uppercase;
+      }
+
+      p {
+        padding: 2rem;
+        border-radius: 5px;
+        font-size: 20px;
+      }
+    }
+  }
+}

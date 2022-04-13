@@ -16,8 +16,8 @@ export const Header = () => {
           <h2>TARGU MURES, STR. BOGATEI, NR. 21</h2>
           {/* TODO: egy uj logo ami szoveges*/}
           <h3>
-            Mi mindent megjavitunk es minden problemat megkapunk! <br /> Mi
-            vagyunk a legjobbak es mindent megoldunk
+            Több éves tapasztalatunkat korszerű és hatékony gépekkel <br />
+            egészítettük ki, amit nyugateurópai partnereink is használnak.
           </h3>
           <a href="#" className="button">
             Contact with us
