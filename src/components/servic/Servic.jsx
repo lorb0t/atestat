@@ -13,7 +13,7 @@ export const Servic = () => {
     <div className="servic_main">
       <h1>Szolgaltatasok</h1>
       <div className="servic-containers">
-        <div className="1container container-left container" id="">
+        <div className="1container container-left container" id="cont1">
           <div className="text-container" id="">
             <h3>Duguláselhárítás</h3>
             <p>
@@ -32,7 +32,7 @@ export const Servic = () => {
             <img src={cleaning} alt="picture" className="servic-img" />
           </div>
         </div>
-        <div className="2container container-right container" id="">
+        <div className="2container container-right container" id="cont2">
           <div className="img-container">
             <img src={szippantas} alt="picture" className="servic-img" />
           </div>
@@ -52,7 +52,7 @@ export const Servic = () => {
             </button>
           </div>
         </div>
-        <div className="3container container-left container" id="">
+        <div className="3container container-left container" id="cont3">
           <div className="text-container">
             <h3>
               Lefolyó cső ásás nélküli javítása <br /> (No dig technologia)
@@ -75,7 +75,7 @@ export const Servic = () => {
             <img src={inliner} alt="picture" className="servic-img" />
           </div>
         </div>
-        <div className="4container container-right container" id="">
+        <div className="4container container-right container" id="cont4">
           <div className="img-container">
             <img src={robot} alt="picture" className="servic-img" />
           </div>
@@ -98,7 +98,7 @@ export const Servic = () => {
             </button>
           </div>
         </div>
-        <div className="5container container-left container" id="">
+        <div className="5container container-left container" id="cont5">
           <div className="text-container">
             <h3>
               Csőtörés bemérés - vízveszteség mérés - vízvezeték és

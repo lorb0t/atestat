@@ -30,23 +30,23 @@ export const Header = () => {
         </div>
         <div className="header_services">
           {[
-            "Duguláselhárítás",
-            " Szennyvíz szippantás",
-            "Lefolyó cső ásás nélküli javítása",
-            "A Csatorna videóvizsgálata(CCTV)",
-            "Csőtörés bemérés",
+            { name: "Duguláselhárítás", id: "cont1" },
+            { name: " Szennyvíz szippantás", id: "cont2" },
+            { name: "Lefolyó cső ásás nélküli javítása", id: "cont3" },
+            { name: "A Csatorna videóvizsgálata(CCTV)", id: "cont4" },
+            { name: "Csőtörés bemérés", id: "cont5" },
           ].map((item) => (
             <Link
               activeClass="active"
-              to={item}
-              key={item}
+              to={item.id}
+              key={item.id}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={-150}
               duration={500}
               className="slide-right"
             >
-              {item}
+              {item.name}
             </Link>
           ))}
         </div>

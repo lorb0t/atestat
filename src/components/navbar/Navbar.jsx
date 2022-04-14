@@ -71,6 +71,7 @@ export const Navbar = () => {
                   <Link
                     activeClass="active"
                     to={item}
+                    key={item}
                     spy={true}
                     smooth={true}
                     offset={0}

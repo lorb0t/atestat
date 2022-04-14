@@ -1,7 +1,9 @@
 import React from "react";
-import "./Footer.css";
+import "./Footer.scss";
 import logo from "../../assets/Images/company_logo.png";
 import "../../assets/Animations/logo_woble.css";
+
+import { Link } from "react-scroll";
 
 import { animateScroll as scroll } from "react-scroll";
 
@@ -18,13 +20,24 @@ export const Footer = () => {
           </div>
           <div className="vertical_line"></div>
           <div className="footer-heading-explore">
-            <ul>
-              <li style={{ color: "white" }}>Explore</li>
-              {/* TODO: fill this out when we are done with the navbar filling out */}
-              <li>Home</li>
-              <li>Home</li>
-              <li>Home</li>
-            </ul>
+            <p style={{ color: "white" }}>Explore</p>
+            <div className="footer_services">
+              {["szolgaltatasok", "video", "about", "contact", "gallery"].map(
+                (item) => (
+                  <Link
+                    activeClass="active"
+                    key={item}
+                    to={item}
+                    spy={true}
+                    smooth={true}
+                    offset={-120}
+                    duration={500}
+                  >
+                    {item}
+                  </Link>
+                )
+              )}
+            </div>
           </div>
           <div className="vertical_line"></div>
           <div className="footer-heading-contact">
