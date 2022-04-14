@@ -1,6 +1,8 @@
 import React from "react";
 import "./Servic.scss";
 
+import { motion } from "framer-motion";
+
 import image from "../../assets/Images/company_house.png";
 import cleaning from "../../assets/Images/cleaning.png";
 import szippantas from "../../assets/Images/Kamion1.jpeg";
@@ -28,14 +30,24 @@ export const Servic = () => {
               <span class="button-text">Tudj meg többet</span>
             </button>
           </div>
-          <div className="img-container">
+          <motion.div
+            className="img-container"
+            initial={{ x: "40vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             <img src={cleaning} alt="picture" className="servic-img" />
-          </div>
+          </motion.div>
         </div>
         <div className="2container container-right container" id="cont2">
-          <div className="img-container">
+          <motion.div
+            className="img-container"
+            initial={{ x: "-40vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             <img src={szippantas} alt="picture" className="servic-img" />
-          </div>
+          </motion.div>
           <div className="text-container">
             <h3>Szennyvíz szippantás - szennyvíz elszállítás</h3>
             <p>
@@ -71,14 +83,24 @@ export const Servic = () => {
               <span class="button-text">Tudj meg többet</span>
             </button>
           </div>
-          <div className="img-container">
+          <motion.div
+            className="img-container"
+            initial={{ x: "40vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             <img src={inliner} alt="picture" className="servic-img" />
-          </div>
+          </motion.div>
         </div>
         <div className="4container container-right container" id="cont4">
-          <div className="img-container">
+          <motion.div
+            className="img-container"
+            initial={{ x: "-40vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             <img src={robot} alt="picture" className="servic-img" />
-          </div>
+          </motion.div>
           <div className="text-container">
             <h3>Csatornavezetékek/lefolyócsövek videóvizsgálata(CCTV)</h3>
             {/* TODO: megkerdezni hogy itt a cim jo e */}
@@ -117,9 +139,14 @@ export const Servic = () => {
             </button>
           </div>
 
-          <div className="img-container">
+          <motion.div
+            className="img-container"
+            initial={{ x: "40vw" }}
+            animate={{ x: 0 }}
+            transition={{ duration: 1.5 }}
+          >
             <img src={bemeres} alt="picture" className="servic-img" />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

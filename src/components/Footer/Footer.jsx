@@ -1,4 +1,5 @@
-import React from "react";
+import { useInView } from "react-intersection-observer";
+
 import "./Footer.scss";
 import logo from "../../assets/Images/company_logo.png";
 import "../../assets/Animations/logo_woble.css";
@@ -8,6 +9,10 @@ import { Link } from "react-scroll";
 import { animateScroll as scroll } from "react-scroll";
 
 export const Footer = () => {
+  const { ref, inView, entry } = useInView({
+    threshold: 0,
+  });
+
   return (
     <div className="footer section __padding">
       <div className="footer_heading-main">
@@ -100,8 +105,12 @@ export const Footer = () => {
               <li>Privacy</li>
             </ul>
           </div>
-          <div className="footer-heading-img wobble-hor-bottom">
-            <img src={logo} alt="logo" />
+          <div
+            className={`footer-heading-img ${
+              inView ? "wobble-hor-bottom" : ""
+            }`}
+          >
+            <img src={logo} alt="logo" ref={ref} />
             {/* TODO: csak akkor jojjon be a cucc mikor odagorgetunk */}
           </div>
         </div>
