@@ -29,10 +29,11 @@ export const Navbar = () => {
           ].map((item) => (
             <Link
               activeClass="active"
+              key={item}
               to={item}
               spy={true}
               smooth={true}
-              offset={-70}
+              offset={0}
               duration={500}
             >
               {item}
@@ -72,7 +73,7 @@ export const Navbar = () => {
                     to={item}
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={0}
                     duration={500}
                     onClick={() => setToggleMenu(false)}
                   >

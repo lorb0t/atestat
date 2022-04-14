@@ -5,6 +5,7 @@ import "../../assets/Animations/zoomIn.css";
 import "../../assets/Animations/roundedButton.scss";
 
 import { Link, animateScroll as scroll } from "react-scroll";
+import { motion } from "framer-motion";
 
 export const Header = () => {
   return (
@@ -19,9 +20,13 @@ export const Header = () => {
             Több éves tapasztalatunkat korszerű és hatékony gépekkel <br />
             egészítettük ki, amit nyugateurópai partnereink is használnak.
           </h3>
-          <a href="#" className="button">
-            Contact with us
-          </a>
+
+          <motion.div whileHover={{ scale: 1.2 }}>
+            <a href="#" className="button">
+              Contact with us
+            </a>
+          </motion.div>
+
           {/* TODO: a button vigyen a contact helyre */}
         </div>
         <div className="header_services">
@@ -29,7 +34,7 @@ export const Header = () => {
             "Duguláselhárítás",
             " Szennyvíz szippantás",
             "Lefolyó cső ásás nélküli javítása",
-            "A Csatornavezetékek videóvizsgálata(CCTV)",
+            "A Csatorna videóvizsgálata(CCTV)",
             "Csőtörés bemérés",
           ].map((item) => (
             <Link

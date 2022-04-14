@@ -8,6 +8,8 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
+import { motion } from "framer-motion";
+
 export const About = () => {
   return (
     <div className="about_main">
