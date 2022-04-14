@@ -15,7 +15,6 @@ export const Header = () => {
         <div className="header_comp-motto">
           <h1>S.C. CLEAN SPEED S.R.L.</h1>
           <h2>TARGU MURES, STR. BOGATEI, NR. 21</h2>
-          {/* TODO: egy uj logo ami szoveges*/}
           <h3>
             Több éves tapasztalatunkat korszerű és hatékony gépekkel <br />
             egészítettük ki, amit nyugateurópai partnereink is használnak.
@@ -50,7 +49,6 @@ export const Header = () => {
               {item}
             </Link>
           ))}
-          {/* FIXME: az id megjavitasa */}
         </div>
       </div>
     </div>
