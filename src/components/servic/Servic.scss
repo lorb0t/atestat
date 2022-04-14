@@ -1,3 +1,17 @@
 .servic_main {
   background-color: gray;
 }
+
+.servic-img {
+  height: 200px;
+  width: auto;
+}
+
+.servic-containers {
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}

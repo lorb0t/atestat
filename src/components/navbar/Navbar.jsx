@@ -33,7 +33,7 @@ export const Navbar = () => {
               to={item}
               spy={true}
               smooth={true}
-              offset={0}
+              offset={-120}
               duration={500}
             >
               {item}
