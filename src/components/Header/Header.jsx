@@ -40,6 +40,7 @@ export const Header = () => {
             <Link
               activeClass="active"
               to={item}
+              key={item}
               spy={true}
               smooth={true}
               offset={-70}
