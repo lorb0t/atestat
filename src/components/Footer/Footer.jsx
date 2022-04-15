@@ -128,13 +128,13 @@ export const Footer = () => {
             Created by:{" "}
             <span>
               <a href="https://github.com/progenor">
-                <p className="inLine">progenor</p>
+                <span className="inLine">progenor</span>
               </a>
             </span>{" "}
             &{" "}
             <span>
               <a href="https://www.google.com/">
-                <p className="inLine">lorbot</p>
+                <span className="inLine">lorbot</span>
               </a>
             </span>
           </p>

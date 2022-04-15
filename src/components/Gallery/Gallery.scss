@@ -1,0 +1,19 @@
+.gallery_main {
+  background-color: gray;
+
+  img {
+    width: 300px;
+    height: 400px;
+  }
+
+  .carousel {
+    .slider-wrapper {
+      width: 70%;
+    }
+
+    .thumb {
+      width: 5%;
+      height: 50px;
+    }
+  }
+}

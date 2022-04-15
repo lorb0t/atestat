@@ -6,6 +6,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Servic } from "./components/servic/Servic";
 import { About } from "./components/About/About";
 import { Video } from "./components/Video/Video";
+import { Gallery } from "./components/Gallery/Gallery";
 
 const App = () => {
   return (
@@ -29,6 +30,10 @@ const App = () => {
       <div className="video" id="video">
         <Video />
       </div>
+
+      {/* <div className="gallery" id="gallery">
+        <Gallery />
+      </div> */}
 
       <div className="footer__bg" id="footer">
         <Footer />

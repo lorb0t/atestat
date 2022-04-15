@@ -2,6 +2,7 @@ import "./Servic.scss";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import image from "../../assets/Images/company_house.png";
 import cleaning from "../../assets/Images/cleaning.png";
@@ -39,11 +40,11 @@ export const Servic = () => {
               lefolyó, vagy a főlefolyó - jó helyen jár - mi igazán kihúzzuk önt
               a ... baj- ból!
             </p>
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
               </span>
-              <span class="button-text">Tudj meg többet</span>
+              <span className="button-text">Tudj meg többet</span>
             </button>
           </div>
           <motion.div
@@ -78,11 +79,11 @@ export const Servic = () => {
               tartálykocsival történik, majd a cégünk által szerződött
               szennyvíztelepeken lesz tisztítva.
             </p>
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
               </span>
-              <span class="button-text">Tudj meg többet</span>
+              <span className="button-text">Tudj meg többet</span>
             </button>
           </div>
         </div>
@@ -98,11 +99,11 @@ export const Servic = () => {
               tehnológiának köszönhetően a legtöbb esetben a hibák javíthatóak
               ásás nélkül, a lefolyócső belsejében kialakítva új felületet.
             </p>
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
               </span>
-              <span class="button-text">Tudj meg többet</span>
+              <span className="button-text">Tudj meg többet</span>
             </button>
           </div>
           <motion.div
@@ -140,11 +141,11 @@ export const Servic = () => {
               a lefolyók megismétlődő dugulás okát, a csatornahálózat hibás
               mükődését, a kiszívárgások lokációját, stb.
             </p>
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
               </span>
-              <span class="button-text">Tudj meg többet</span>
+              <span className="button-text">Tudj meg többet</span>
             </button>
           </div>
         </div>
@@ -159,11 +160,11 @@ export const Servic = () => {
               szemmel nem látható, nem jelenik meg a felszínen a víz, mégis a
               vízóra vízfogyasztást mér.
             </p>
-            <button class="learn-more">
-              <span class="circle" aria-hidden="true">
-                <span class="icon arrow"></span>
+            <button className="learn-more">
+              <span className="circle" aria-hidden="true">
+                <span className="icon arrow"></span>
               </span>
-              <span class="button-text">Tudj meg többet</span>
+              <span className="button-text">Tudj meg többet</span>
             </button>
           </div>
 
