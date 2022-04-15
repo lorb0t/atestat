@@ -1,9 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+
 .servic_main {
   background-color: var(--color-white-bg);
 
   h1 {
+    font-family: "Bebas Neue", cursive;
     font-size: 55px;
-    letter-spacing: 7px;
+    letter-spacing: 2.5px;
     text-transform: uppercase;
     line-height: 8rem;
   }

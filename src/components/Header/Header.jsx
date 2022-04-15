@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.scss";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/Animations/zoomIn.css";
