@@ -27,7 +27,7 @@ export const Footer = () => {
           <div className="footer-heading-explore">
             <p style={{ color: "white" }}>Explore</p>
             <div className="footer_services">
-              {["szolgaltatasok", "video", "about", "contact", "gallery"].map(
+              {["szolgaltatasok", "about", "video", "contact", "gallery"].map(
                 (item) => (
                   <Link
                     activeClass="active"

@@ -22,8 +22,8 @@ export const Navbar = () => {
           {[
             "home",
             "szolgaltatasok",
-            "video",
             "about",
+            "video",
             "contact",
             "gallery",
           ].map((item) => (
@@ -33,7 +33,7 @@ export const Navbar = () => {
               to={item}
               spy={true}
               smooth={true}
-              offset={-120}
+              offset={-118}
               duration={500}
             >
               {item}
@@ -63,8 +63,8 @@ export const Navbar = () => {
                 {[
                   "home",
                   "szolgaltatasok",
-                  "video",
                   "about",
+                  "video",
                   "contact",
                   "gallery",
                 ].map((item) => (
