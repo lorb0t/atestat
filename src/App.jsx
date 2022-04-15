@@ -31,9 +31,9 @@ const App = () => {
         <Video />
       </div>
 
-      {/* <div className="gallery" id="gallery">
+      <div className="gallery" id="gallery">
         <Gallery />
-      </div> */}
+      </div>
 
       <div className="footer__bg" id="footer">
         <Footer />
