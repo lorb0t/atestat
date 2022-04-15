@@ -25,7 +25,7 @@ export const Video = () => {
         src={video}
         type="video/mp4"
         loop
-        controls={false}
+        controls={true}
         muted
         ref={vidRef}
         onClick={handleVideo}
