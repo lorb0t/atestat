@@ -7,7 +7,7 @@ import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { LearnMore } from "./components/LearnMoreDef/LearnMore";
+import { LearnMore } from "./pages/LearnMoreDef/LearnMore";
 
 const App = () => {
   return (

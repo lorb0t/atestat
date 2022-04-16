@@ -4,8 +4,6 @@ import { FiPhoneCall } from "react-icons/fi";
 import { FaFax } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
-// import "./button-send-anim";
-
 export const Contact = () => {
   const sendEmail = (e) => {
     // TODO: use emailJs and send email
@@ -16,27 +14,32 @@ export const Contact = () => {
       <h1>Contact</h1>
       <div className="main">
         <div className="main-follow">
-          <div className="phone">
-            <FiPhoneCall />
-            Tel:{" "}
+          <div className="phone el">
+            <div className="icon">
+              <FiPhoneCall />
+            </div>
             <a href="tel:+40744.395.333" className="usable_links">
               +40744.395.333
             </a>
           </div>
-          <div className="fax">
-            <FaFax /> Fax:{" "}
+          <div className="fax el">
+            <div className="icon">
+              <FaFax />
+            </div>
             <a href="fax:+40365.430.415" className="usable_links">
               +40365.430.415
             </a>
           </div>
-          <div className="follow-email">
-            <MdEmail />
-            E-mail:{" "}
+          <div className="follow-email el">
+            <div className="icon">
+              <MdEmail />
+            </div>
             <a href="mailto:info@cleanspeed.ro" className="usable_links">
               info@cleanspeed.ro
             </a>
           </div>
         </div>
+        <div className="vertical-line"></div>
         <div className="main-form">
           <label htmlFor="name" className="label">
             Name:
@@ -71,9 +74,6 @@ export const Contact = () => {
           ></textarea>
 
           <button>SEND</button>
-          {/* <div class="container">
-            <button id="button"></button>
-          </div> */}
         </div>
       </div>
     </div>

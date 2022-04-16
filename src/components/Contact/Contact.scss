@@ -3,15 +3,16 @@ $text-bg-color: rgb(29, 28, 29);
 $text-color: rgb(157, 157, 157);
 
 .big-main {
-  height: 80vh;
+  height: 90vh;
   width: 100vw;
   background-color: $bg-color;
-  padding: 4rem;
+  padding: 3rem;
 
   h1 {
     font-size: 65px;
     text-transform: uppercase;
     color: $text-color;
+    margin-bottom: 5%;
   }
 }
 
@@ -22,16 +23,32 @@ $text-color: rgb(157, 157, 157);
   align-items: center;
 }
 
+.icon {
+  display: inline;
+  padding: 20px;
+  width: 40px;
+  height: 40px;
+  background-color: $text-bg-color;
+  border-radius: 50%;
+}
+
 .main-follow {
-  div {
+  .el {
     background-color: $text-bg-color;
-    margin-top: 3%;
+    margin-top: 5%;
     border-radius: 10px;
-    padding: 20px;
-    font-size: 30px;
+    padding: 30px;
+    padding-right: 9rem;
+    font-size: 20px;
     text-align: left;
     color: $text-color;
   }
+}
+
+.vertical-line {
+  border: 1px solid $text-color;
+  height: 15rem;
+  margin: 1rem 5% 1rem 5%;
 }
 
 .main-form {
@@ -39,98 +56,24 @@ $text-color: rgb(157, 157, 157);
   flex-direction: column;
 
   text-align: left;
-  padding: 2rem;
 
   .cont {
     font-size: 20px;
     color: $text-color;
     background-color: $text-bg-color;
+    padding: 8px;
+    box-sizing: border-box;
     border: none;
     border-radius: 8px;
-    padding: 6px;
   }
   .label {
     color: $text-color;
-    font-size: 25px;
+    font-size: 20px;
+  }
+
+  .message {
+    resize: none;
+    width: 30vw;
+    height: 30vh;
   }
 }
-
-// $green: #1ecd97;
-// $gray: #bbbbbb;
-
-// .container {
-//   font-family: "Roboto", sans-serif;
-// }
-// .container {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   margin-left: -65px;
-//   margin-top: -20px;
-//   width: 130px;
-//   height: 40px;
-//   text-align: center;
-// }
-// button {
-//   outline: none;
-//   height: 40px;
-//   text-align: center;
-//   width: 130px;
-//   border-radius: 40px;
-//   background: #fff;
-//   border: 2px solid $green;
-//   color: $green;
-//   letter-spacing: 1px;
-//   text-shadow: 0;
-//   font: {
-//     size: 12px;
-//     weight: bold;
-//   }
-//   cursor: pointer;
-//   transition: all 0.25s ease;
-//   &:hover {
-//     color: white;
-//     background: $green;
-//   }
-//   &:active {
-//     //letter-spacing: 2px;
-//     letter-spacing: 2px;
-//   }
-//   &:after {
-//     content: "SUBMIT";
-//   }
-// }
-// .onclic {
-//   width: 40px;
-//   border-color: $gray;
-//   border-width: 3px;
-//   font-size: 0;
-//   border-left-color: $green;
-//   animation: rotating 2s 0.25s linear infinite;
-
-//   &:after {
-//     content: "";
-//   }
-//   &:hover {
-//     color: $green;
-//     background: white;
-//   }
-// }
-// .validate {
-//   font-size: 13px;
-//   color: white;
-//   background: $green;
-//   &:after {
-//     font-family: "FontAwesome";
-//     content: "\f00c";
-//   }
-// }
-
-// @keyframes rotating {
-//   from {
-//     transform: rotate(0deg);
-//   }
-//   to {
-//     transform: rotate(360deg);
-//   }
-// }

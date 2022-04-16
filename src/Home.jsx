@@ -12,12 +12,12 @@ export const Home = () => {
         <Header />
       </div>
 
-      <div className="servic" id="szolgaltatasok">
-        <Servic />
-      </div>
-
       <div className="about_stuff" id="about">
         <About />
+      </div>
+
+      <div className="servic" id="szolgaltatasok">
+        <Servic />
       </div>
 
       <div className="video" id="video">
