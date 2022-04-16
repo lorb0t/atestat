@@ -2,6 +2,19 @@ $bg-color: rgb(34, 33, 34);
 $text-bg-color: rgb(29, 28, 29);
 $text-color: rgb(157, 157, 157);
 
+.corner-piece-left {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+.corner-piece-right {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+
+  transform: scaleX(-1);
+}
+
 .big-main {
   height: 90vh;
   width: 100vw;
@@ -23,19 +36,22 @@ $text-color: rgb(157, 157, 157);
   align-items: center;
 }
 
-.icon {
+.follow-icon {
   display: inline;
-  padding: 20px;
-  width: 40px;
-  height: 40px;
-  background-color: $text-bg-color;
+
+  padding: 17px;
+  width: 30px;
+  height: 30px;
+  background-color: #363537;
+  background-size: cover;
   border-radius: 50%;
+  margin-right: 12px;
 }
 
 .main-follow {
   .el {
     background-color: $text-bg-color;
-    margin-top: 5%;
+    margin-bottom: 6%;
     border-radius: 10px;
     padding: 30px;
     padding-right: 9rem;
@@ -47,7 +63,7 @@ $text-color: rgb(157, 157, 157);
 
 .vertical-line {
   border: 1px solid $text-color;
-  height: 15rem;
+  height: 22rem;
   margin: 1rem 5% 1rem 5%;
 }
 
@@ -65,15 +81,24 @@ $text-color: rgb(157, 157, 157);
     box-sizing: border-box;
     border: none;
     border-radius: 8px;
+    margin-bottom: 5px;
   }
   .label {
     color: $text-color;
     font-size: 20px;
+    margin-bottom: 5px;
   }
 
   .message {
     resize: none;
     width: 30vw;
     height: 30vh;
+  }
+
+  .send-button {
+    text-align: center;
+    width: 15vw;
+    top: 20px;
+    left: 25%;
   }
 }

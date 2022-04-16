@@ -45,6 +45,7 @@ export const Video = () => {
         ref={vidRef}
         onClick={handleVideo}
       />
+      {/* TODO: hang jel kore cucc */}
       {playVideo ? (
         <div className="mute-btn-overlay-active">
           <div className="mute-btn" onClick={handleSound}>
