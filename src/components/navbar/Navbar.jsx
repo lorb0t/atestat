@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { RiMenuLine, RiCloseLine } from "react-icons/ri";
 import "./Navbar.scss";
 
+import { Link as Link1 } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 // import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -14,9 +15,11 @@ export const Navbar = () => {
     <div className="navbar">
       <nav className="navbar-links">
         <div className="navbar-links_logo">
-          <h1 onClick={scroll.scrollToTop}>
-            <i>Clean Speed</i>
-          </h1>
+          <Link1 to="/">
+            <h1 onClick={scroll.scrollToTop}>
+              <i>Clean Speed</i>
+            </h1>
+          </Link1>
         </div>
         <div className="navbar-links_container">
           {[

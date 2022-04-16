@@ -2,7 +2,7 @@ import "./Servic.scss";
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import image from "../../assets/Images/company_house.png";
 import cleaning from "../../assets/Images/cleaning.png";
@@ -44,7 +44,9 @@ export const Servic = () => {
               <span className="circle" aria-hidden="true">
                 <span className="icon arrow"></span>
               </span>
-              <span className="button-text">Tudj meg többet</span>
+              <span className="button-text">
+                <Link to="/dugulas">Tudj meg többet</Link>
+              </span>
             </button>
           </div>
           <motion.div
@@ -83,7 +85,9 @@ export const Servic = () => {
               <span className="circle" aria-hidden="true">
                 <span className="icon arrow"></span>
               </span>
-              <span className="button-text">Tudj meg többet</span>
+              <span className="button-text">
+                <Link to="/szenyviz">Tudj meg többet</Link>
+              </span>
             </button>
           </div>
         </div>
@@ -103,7 +107,9 @@ export const Servic = () => {
               <span className="circle" aria-hidden="true">
                 <span className="icon arrow"></span>
               </span>
-              <span className="button-text">Tudj meg többet</span>
+              <span className="button-text">
+                <Link to="/javitas">Tudj meg többet</Link>
+              </span>
             </button>
           </div>
           <motion.div
@@ -145,7 +151,9 @@ export const Servic = () => {
               <span className="circle" aria-hidden="true">
                 <span className="icon arrow"></span>
               </span>
-              <span className="button-text">Tudj meg többet</span>
+              <span className="button-text">
+                <Link to="/cctv">Tudj meg többet</Link>
+              </span>
             </button>
           </div>
         </div>
@@ -164,7 +172,9 @@ export const Servic = () => {
               <span className="circle" aria-hidden="true">
                 <span className="icon arrow"></span>
               </span>
-              <span className="button-text">Tudj meg többet</span>
+              <span className="button-text">
+                <Link to="/csotores">Tudj meg többet</Link>
+              </span>
             </button>
           </div>
 

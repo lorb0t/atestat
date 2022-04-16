@@ -1,43 +1,31 @@
 import "./App.css";
 import "./index.js";
-import { Header } from "./components/Header/Header";
+
+import { Home } from "./Home";
+
 import { Navbar } from "./components/navbar/Navbar";
 import { Footer } from "./components/Footer/Footer";
-import { Servic } from "./components/servic/Servic";
-import { About } from "./components/About/About";
-import { Video } from "./components/Video/Video";
-import { Gallery } from "./components/Gallery/Gallery";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LearnMore } from "./components/LearnMoreDef/LearnMore";
 
 const App = () => {
   return (
     <div className="AppMain">
-      <div className="gradient__bg">
-        <Navbar />
-      </div>
+      <BrowserRouter>
+        <div className="gradient__bg">
+          <Navbar />
+        </div>
 
-      <div className="header__bg" id="home">
-        <Header />
-      </div>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/dugulas" element={<LearnMore name="lori" age="17" />} />
+        </Routes>
 
-      <div className="servic" id="szolgaltatasok">
-        <Servic />
-      </div>
-
-      <div className="about_stuff" id="about">
-        <About />
-      </div>
-
-      <div className="video" id="video">
-        <Video />
-      </div>
-
-      <div className="gallery" id="gallery">
-        <Gallery />
-      </div>
-
-      <div className="footer__bg" id="footer">
-        <Footer />
-      </div>
+        <div className="footer__bg" id="footer">
+          <Footer />
+        </div>
+      </BrowserRouter>
     </div>
   );
 };
