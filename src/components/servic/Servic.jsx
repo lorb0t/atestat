@@ -158,7 +158,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/cctv">Tudj meg többet</Link>
+                  <Link to="/camera">Tudj meg többet</Link>
                 </span>
               </button>
             </div>

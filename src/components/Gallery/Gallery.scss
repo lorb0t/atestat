@@ -1,15 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Federo&display=swap");
 .gallery_main {
   background-color: rgb(29, 28, 28);
   height: 100vh;
   width: auto;
 
   h1 {
-    padding-top: 1rem;
-    margin-bottom: 2rem;
-    font-size: 60px;
+    font-family: "Federo", sans-serif;
+    padding: 1rem 0;
+    margin: 0;
+    font-size: 70px;
     letter-spacing: 5px;
     text-transform: uppercase;
     color: white;
+  }
+
+  p {
+    display: inline;
+    text-align: center;
+    line-height: 5rem;
+    justify-content: center;
+    margin-right: 2rem;
+    font-size: 20px;
+    color: white;
+  }
+  .link_wrapper {
+    display: inline;
+    margin-top: 1rem;
   }
 }
 
