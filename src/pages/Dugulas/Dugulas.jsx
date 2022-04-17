@@ -1,11 +1,9 @@
-import "./LearnMoreDef.scss";
+import "./Dugulas.scss";
 
-export const LearnMore = (props) => {
+export const Dugulas = () => {
   return (
     <div className="more-main">
-      <div>
-        szia {props.name} {props.age}
-      </div>
+      <div>szia</div>
     </div>
   );
 };
