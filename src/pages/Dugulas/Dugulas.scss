@@ -1,0 +1,24 @@
+.dugulas-main {
+  height: 90vh;
+  margin-top: 7rem;
+  background-color: rgb(96, 96, 96);
+
+  .dugulas-text {
+    background-color: rgba(0, 0, 0, 0.637);
+    margin: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+
+    padding: 10rem 10rem;
+
+    p {
+      font-size: 25px;
+      color: rgb(184, 184, 184);
+    }
+  }
+}
