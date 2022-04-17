@@ -79,6 +79,38 @@
   }
 }
 
+.corner-vec-left {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+.corner-vec-right {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  transform: scaleX(-1);
+}
+
+.corner-vec-left-bottom {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  margin-top: 152.5%;
+  transform: scaleY(-1);
+}
+.corner-vec-right-bottom {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  margin-top: 152.5%;
+  transform: scaleY(-1) scaleX(-1);
+}
+
+.first-pic {
+  z-index: 2;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Mukta:700");
 
 $bg: #f3f8fa;

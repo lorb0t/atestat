@@ -31,7 +31,10 @@ export const Servic = () => {
 
   return (
     <>
-      {/* <img src={corner1line} alt="" /> */}
+      <img src={corner1line} alt="" className="corner-vec-left" />
+      <img src={corner1line} alt="" className="corner-vec-right" />
+      <img src={corner1line} alt="" className="corner-vec-left-bottom" />
+      <img src={corner1line} alt="" className="corner-vec-right-bottom" />
       <div className="servic_main">
         <h1>Szolgaltatasok</h1>
         <div className="servic-containers">
@@ -53,7 +56,7 @@ export const Servic = () => {
               </button>
             </div>
             <motion.div
-              className="img-container"
+              className="img-container first-pic"
               initial={{ x: "40vw" }}
               animate={{
                 x: `${cont1.inView ? 0 : "35vw"}`,
@@ -182,7 +185,7 @@ export const Servic = () => {
             </div>
 
             <motion.div
-              className="img-container"
+              className="img-container first-pic"
               initial={{ x: "40vw" }}
               animate={{
                 x: `${cont5.inView ? 0 : "40vw"}`,

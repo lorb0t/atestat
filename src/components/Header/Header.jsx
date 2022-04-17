@@ -20,9 +20,17 @@ export const Header = () => {
           </h3>
 
           <motion.div whileHover={{ scale: 1.2 }}>
-            <a href="#" className="button">
-              Contact with us
-            </a>
+            <button className="button">
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
+                Contact with us
+              </Link>
+            </button>
           </motion.div>
 
           {/* TODO: a button vigyen a contact helyre */}

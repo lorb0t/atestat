@@ -102,7 +102,10 @@ export const Contact = () => {
               endIcon={<SendIcon />}
               className="send-button"
               onClick={sendEmail}
-              sx={{ backgroundColor: "#000000" }}
+              sx={{
+                backgroundColor: "#000000",
+                "&:hover": { backgroundColor: "#079E00" },
+              }}
             >
               Send
             </Button>
