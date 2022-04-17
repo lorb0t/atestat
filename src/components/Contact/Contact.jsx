@@ -1,5 +1,7 @@
 import "./Contact.scss";
 import corner from "../../assets/Images_for_web/corner.svg";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 import { FiPhoneCall } from "react-icons/fi";
 import { FaFax } from "react-icons/fa";
@@ -8,16 +10,29 @@ import { IoLocationSharp } from "react-icons/io5";
 
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
-import { createTheme } from "@mui/material/styles";
-import { grey } from "@mui/material/colors";
-import { width } from "@mui/system";
 
 export const Contact = () => {
-  const sendEmail = (e) => {
-    alert("szia");
-    // TODO: use emailJs and send email
-  };
+  const form = useRef();
 
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "YOUR_SERVICE_ID",
+        "YOUR_TEMPLATE_ID",
+        form.current,
+        "YOUR_PUBLIC_KEY"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
   const icon_color = "#BCB4B4";
 
   return (
@@ -65,7 +80,7 @@ export const Contact = () => {
             </div>
           </div>
           <div className="vertical-line"></div>
-          <div className="main-form">
+          <form className="main-form" ref={form}>
             <label htmlFor="name" className="label">
               Name:
             </label>
@@ -109,7 +124,7 @@ export const Contact = () => {
             >
               Send
             </Button>
-          </div>
+          </form>
         </div>
       </div>
     </>
