@@ -14,18 +14,12 @@
     color: white;
   }
 
-  p {
-    display: inline;
-    text-align: center;
-    line-height: 5rem;
-    justify-content: center;
-    margin-right: 2rem;
-    font-size: 20px;
-    color: white;
-  }
   .link_wrapper {
     display: inline;
-    margin-top: 1rem;
+    position: absolute;
+    left: 42.5%;
+    z-index: 1;
+    margin-top: -1rem;
   }
 }
 
