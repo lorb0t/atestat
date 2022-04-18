@@ -3,10 +3,13 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../../assets/Animations/zoomIn.css";
 import "../../assets/Animations/roundedButton.scss";
 
+import { useTranslation } from "react-i18next";
+
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
 export const Header = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="header">
       {/* zoom_in */}
@@ -14,10 +17,7 @@ export const Header = () => {
         <div className="header_comp-motto">
           <h1>S.C. CLEAN SPEED S.R.L.</h1>
           <h2>TARGU MURES, STR. BOGATEI, NR. 21</h2>
-          <h3>
-            Több éves tapasztalatunkat korszerű és hatékony gépekkel <br />
-            egészítettük ki, amit nyugateurópai partnereink is használnak.
-          </h3>
+          <h3>{t("header_motto")}</h3>
 
           <motion.div whileHover={{ scale: 1.2 }}>
             <button className="button">
