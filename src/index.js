@@ -4,6 +4,9 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
 import { createRoot } from "react-dom/client";
+
+import "./i18n";
+
 const container = document.getElementById("root");
 const root = createRoot(container);
 
