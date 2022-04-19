@@ -29,6 +29,7 @@ export const LanguageModal = ({ showModal, setShowModal }) => {
           variants={backdrop}
           initial="hidden"
           animate="visible"
+          onClick={() => setShowModal(false)}
         >
           <motion.div
             variants={comeIn}
