@@ -14,7 +14,7 @@ export const Footer = () => {
   });
 
   return (
-    <div className="footer section __padding">
+    <div className="footer">
       <div className="footer_heading-main">
         <div className="footer-heading">
           <div className="footer-heading-name">
