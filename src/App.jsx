@@ -10,15 +10,37 @@ import { Footer } from "./components/Footer/Footer";
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Dugulas } from "./pages/Dugulas/Dugulas";
-import { Szenyviz } from "./pages/Szenyviz/Szenyviz";
-import { NoDig } from "./pages/NoDig/NoDig";
-import { Camera } from "./pages/Camera/Camera";
-import { Meres } from "./pages/Meres/Meres";
+import { LearnMore } from "./pages/LearnMore/LearnMore";
 import { LanguageModal } from "./components/Modal/LanguageModal";
+
+// ###############Learn More Import#########################
+import { useTranslation } from "react-i18next";
+
+import dugulas_img1 from "./assets/Images/cleaning.png";
+import dugulas_img2 from "./assets/Images/company_house.png";
+import dugulas_img3 from "./assets/Images/inliner.jpeg";
+
+import szenyviz_img1 from "./assets/Images/cleaning.png";
+import szenyviz_img2 from "./assets/Images/robot.jpg";
+import szenyviz_img3 from "./assets/Images/company-cars.png";
+
+import nodig_img1 from "./assets/Images/robot.jpg";
+import nodig_img2 from "./assets/Images/robot.jpg";
+import nodig_img3 from "./assets/Images/robot.jpg";
+
+import camera_img1 from "./assets/Images/robot.jpg";
+import camera_img2 from "./assets/Images/robot.jpg";
+import camera_img3 from "./assets/Images/robot.jpg";
+
+import meres_img1 from "./assets/Images/robot.jpg";
+import meres_img2 from "./assets/Images/robot.jpg";
+import meres_img3 from "./assets/Images/robot.jpg";
+
+// ###############Learn More Import#########################
 
 const App = ({}) => {
   const [showModal, setShowModal] = useState(false);
+  const { t, i18n } = useTranslation();
 
   return (
     <div className="AppMain">
@@ -29,11 +51,47 @@ const App = ({}) => {
         <LanguageModal showModal={showModal} setShowModal={setShowModal} />
         <Routes>
           <Route exact path="/" element={<Home />} />
-          <Route path="/dugulas" element={<Dugulas />} />
-          <Route path="/szenyviz" element={<Szenyviz />} />
-          <Route path="/nodig" element={<NoDig />} />
-          <Route path="/camera" element={<Camera />} />
-          <Route path="/meres" element={<Meres />} />
+          <Route
+            path="/dugulas"
+            element={
+              <LearnMore
+                title={t("dugulas_cim")}
+                p1={t("dugulas1")}
+                p2={t("dugulas2")}
+                p3={t("dugulas3")}
+                p4={t("dugulas4")}
+                p5={t("dugulas1")}
+                yt1=""
+                yt2=""
+                yt3=""
+                img1={dugulas_img1}
+                img2={dugulas_img2}
+                img3={dugulas_img3}
+              />
+            }
+          />
+          <Route
+            path="/szenyviz"
+            element={
+              <LearnMore
+                title={t("szenyviz_cim")}
+                p1={t("szenyviz1")}
+                p2={t("szenyviz2")}
+                p3={t("szenyviz3")}
+                p4={t("szenyviz4")}
+                p5={t("szenyviz5")}
+                yt1=""
+                yt2=""
+                yt3=""
+                img1={szenyviz_img1}
+                img2={szenyviz_img2}
+                img3={szenyviz_img3}
+              />
+            }
+          />
+          <Route path="/nodig" element={<LearnMore />} />
+          <Route path="/camera" element={<LearnMore />} />
+          <Route path="/meres" element={<LearnMore />} />
         </Routes>
 
         <div className="footer__bg" id="footer">

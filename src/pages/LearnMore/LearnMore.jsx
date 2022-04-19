@@ -1,13 +1,24 @@
-import "./Dugulas.scss";
+import "./LearnMore.scss";
 import { useTranslation } from "react-i18next";
 
-import img1 from "../../assets/Images/bemeres.jpg";
-import img2 from "../../assets/Images/Kamion1.jpeg";
-import img3 from "../../assets/Images/cleaning.png";
-
-export const Dugulas = () => {
+export const LearnMore = ({
+  title,
+  p1,
+  p2,
+  p3,
+  p4,
+  p5,
+  yt1,
+  yt2,
+  yt3,
+  img1,
+  img2,
+  img3,
+  s3,
+  s4,
+  s5,
+}) => {
   const { t, i18n } = useTranslation();
-
   const vid_size = "400px";
 
   return (
@@ -18,31 +29,31 @@ export const Dugulas = () => {
           <img src={img3} alt="" className="dugulas-img2" />
           <img src={img2} alt="" />
         </div>
-        <h1>{t("dugulas_cim")}</h1>
+        <h1>{title}</h1>
 
-        <p>{t("dugulas1")}</p>
-        <p>{t("dugulas2")}</p>
-        <p>{t("dugulas3")}</p>
-        <p>{t("dugulas4")}</p>
-        <p>{t("dugulas5")}</p>
+        <p>{p1}</p>
+        <p>{p2}</p>
+        <p>{p3}</p>
+        <p>{p4}</p>
+        <p>{p5}</p>
 
         <div className="dugulas-youtube">
           <iframe
-            src="https://www.youtube.com/embed/WfsHn84br_8"
+            src={yt1}
             width={vid_size}
             height={vid_size}
             allow="fullscreen;"
           ></iframe>
           <div className="dugulas-vertical-line"></div>
           <iframe
-            src="https://www.youtube.com/embed/WfsHn84br_8"
+            src={yt2}
             width={vid_size}
             height={vid_size}
             allow="fullscreen;"
           ></iframe>
           <div className="dugulas-vertical-line"></div>
           <iframe
-            src="https://www.youtube.com/embed/WfsHn84br_8"
+            src={yt3}
             width={vid_size}
             height={vid_size}
             allow="fullscreen;"
