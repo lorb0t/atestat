@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 
 .servic_main {
-  background-color: var(--color-white-bg);
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    rgb(40, 40, 40) 0%,
+    rgb(168, 168, 168) 1%,
+    rgb(240, 240, 240) 50%,
+    rgb(205, 205, 205) 80%,
+    rgb(143, 143, 143) 99%,
+    rgb(21, 21, 21) 100%
+  );
   width: fit-content;
 
   h1 {
@@ -97,14 +106,14 @@
   position: absolute;
   z-index: 1;
   left: 0;
-  margin-top: 152.5%;
+  bottom: 0;
   transform: scaleY(-1);
 }
 .corner-vec-right-bottom {
   position: absolute;
   z-index: 2;
   right: 0;
-  margin-top: 152.5%;
+  bottom: 0;
   transform: scaleY(-1) scaleX(-1);
 }
 

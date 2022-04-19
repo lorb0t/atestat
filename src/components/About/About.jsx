@@ -9,8 +9,6 @@ import {
   faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { motion } from "framer-motion";
-
 export const About = () => {
   const { t, i18n } = useTranslation();
 

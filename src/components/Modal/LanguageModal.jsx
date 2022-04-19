@@ -1,4 +1,4 @@
-import React from "react";
+import i18next, { changeLanguage } from "i18next";
 import "./LanguageModal.scss";
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -16,8 +16,13 @@ const comeIn = {
 };
 
 export const LanguageModal = ({ showModal, setShowModal }) => {
+  const ChangeLanguage = (props) => {
+    i18next.changeLanguage(props);
+    setShowModal(false);
+  };
+
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence>
       {showModal && (
         <motion.div
           className="backdrop"
@@ -32,13 +37,13 @@ export const LanguageModal = ({ showModal, setShowModal }) => {
             exit="hidden"
             className="language-box"
           >
-            <p>
+            <p onClick={() => ChangeLanguage("hu")}>
               <span className="ctr-logo">
                 <img src={magyar} alt="" className="magyar-flag" />
               </span>
               Magyar
             </p>
-            <p>
+            <p onClick={() => ChangeLanguage("ro")}>
               <span className="ctr-logo">
                 <img src={roman} alt="" className="roman-flag" />
               </span>

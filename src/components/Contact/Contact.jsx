@@ -37,9 +37,9 @@ export const Contact = () => {
 
   return (
     <>
-      <img src={corner} alt="" className="corner-piece-left" />
-      <img src={corner} alt="" className="corner-piece-right" />
       <div className="big-main">
+        <img src={corner} alt="" className="corner-piece-left about-corner" />
+        <img src={corner} alt="" className="corner-piece-right about-corner" />
         <h1>Contact</h1>
         <div className="main">
           <div className="main-follow">
@@ -53,7 +53,7 @@ export const Contact = () => {
             </div>
             <div className="fax el">
               <div className="follow-icon">
-                <FaFax color={icon_color} size={27} />
+                <FaFax color={icon_color} size={27} className="fax-icon" />
               </div>
               <a href="fax:+40365.430.415" className="usable_links">
                 +40365.430.415

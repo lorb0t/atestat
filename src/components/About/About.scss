@@ -1,9 +1,9 @@
 .about_main {
-  background-image: url("../../assets/Images/totally-not-stolen-background2.png");
+  background-image: url("../../assets/Images_for_web/about-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 48vh;
+  height: fit-content;
   width: fit-content;
 
   display: flex;
@@ -12,7 +12,7 @@
   align-items: center;
 
   .about-content {
-    background-color: rgba(0, 0, 0, 0.35202);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 15px;
     box-shadow: 7px 7px 7px 7px blacks;
 
@@ -21,14 +21,13 @@
     align-items: center;
     justify-content: center;
 
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 2% 10%;
 
     .about-text {
       align-items: center;
       padding-top: 1.5rem;
-      padding-left: 20rem;
-      padding-right: 20rem;
+      padding-left: clamp(1rem, 50%, 20rem);
+      padding-right: clamp(1rem, 50%, 20rem);
 
       h1,
       p {

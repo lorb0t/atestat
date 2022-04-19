@@ -31,11 +31,11 @@ export const Servic = () => {
 
   return (
     <>
-      <img src={corner1line} alt="" className="corner-vec-left" />
-      <img src={corner1line} alt="" className="corner-vec-right" />
-      <img src={corner1line} alt="" className="corner-vec-left-bottom" />
-      <img src={corner1line} alt="" className="corner-vec-right-bottom" />
       <div className="servic_main">
+        <img src={corner1line} alt="" className="corner-vec-left" />
+        <img src={corner1line} alt="" className="corner-vec-right" />
+        <img src={corner1line} alt="" className="corner-vec-left-bottom" />
+        <img src={corner1line} alt="" className="corner-vec-right-bottom" />
         <h1>Szolgaltatasok</h1>
         <div className="servic-containers">
           <div className="1container container-left container" id="cont1">

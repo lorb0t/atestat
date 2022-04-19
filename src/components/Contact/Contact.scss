@@ -5,18 +5,19 @@ $text-color: rgb(157, 157, 157);
 .corner-piece-left {
   position: absolute;
   z-index: 1;
+  top: 0;
   left: 0;
 }
 .corner-piece-right {
   position: absolute;
   z-index: 1;
   right: 0;
-  margin-top: 30%;
-
-  transform: scaleX(-1) scaleY(-1);
+  bottom: 0;
+  transform: scaleY(-1) scaleX(-1);
 }
 
 .big-main {
+  position: relative;
   height: 90vh;
   width: 100vw;
   background-color: $bg-color;
@@ -103,5 +104,40 @@ $text-color: rgb(157, 157, 157);
     width: 15vw;
     top: 20px;
     left: 25%;
+  }
+}
+
+@media screen and (max-width: 1252px) {
+  .about-corner {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .vertical-line {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .big-main {
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .big-main {
+    h1 {
+      font-size: 40px;
+    }
+  }
+  .follow-icon {
+    width: 20px;
+    height: 20px;
+  }
+  .el {
+    padding-right: 0;
   }
 }
