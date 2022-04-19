@@ -1,23 +1,11 @@
 import "../LearnMore.scss";
 import { useTranslation } from "react-i18next";
 
-export const LearnMore = ({
-  title,
-  p1,
-  p2,
-  p3,
-  p4,
-  p5,
-  yt1,
-  yt2,
-  yt3,
-  img1,
-  img2,
-  img3,
-  s3,
-  s4,
-  s5,
-}) => {
+import img1 from "../../assets/Images/robot.jpg";
+import img2 from "../../assets/Images/robot.jpg";
+import img3 from "../../assets/Images/robot.jpg";
+
+export const Camera = ({}) => {
   const { t, i18n } = useTranslation();
   const vid_size = "400px";
 
@@ -29,31 +17,27 @@ export const LearnMore = ({
           <img src={img3} alt="" className="dugulas-img2" />
           <img src={img2} alt="" />
         </div>
-        <h1>{title}</h1>
+        <h1></h1>
 
-        <p>{p1}</p>
-        <p>{p2}</p>
-        <p>{p3}</p>
-        <p>{p4}</p>
-        <p>{p5}</p>
+        <p></p>
 
         <div className="dugulas-youtube">
           <iframe
-            src={yt1}
+            src=""
             width={vid_size}
             height={vid_size}
             allow="fullscreen;"
           ></iframe>
           <div className="dugulas-vertical-line"></div>
           <iframe
-            src={yt2}
+            src=""
             width={vid_size}
             height={vid_size}
             allow="fullscreen;"
           ></iframe>
           <div className="dugulas-vertical-line"></div>
           <iframe
-            src={yt3}
+            src=""
             width={vid_size}
             height={vid_size}
             allow="fullscreen;"

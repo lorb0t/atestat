@@ -4,6 +4,8 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 
+import { useTranslation } from "react-i18next";
+
 import image from "../../assets/Images/company_house.png";
 import cleaning from "../../assets/Images/cleaning.png";
 import szippantas from "../../assets/Images/Kamion1.jpeg";
@@ -29,6 +31,8 @@ export const Servic = () => {
     threshold: 0,
   });
 
+  const { t, i18n } = useTranslation();
+
   return (
     <>
       <div className="servic_main">
@@ -40,12 +44,8 @@ export const Servic = () => {
         <div className="servic-containers">
           <div className="1container container-left container" id="cont1">
             <div className="text-container" id="cont1" ref={cont1.ref}>
-              <h3>Duguláselhárítás</h3>
-              <p>
-                Ha eldugult a mosdó, zuhanyzó, padlóösszefolyó, kádlefolyó, WC
-                lefolyó, vagy a főlefolyó - jó helyen jár - mi igazán kihúzzuk
-                önt a ... baj- ból!
-              </p>
+              <h3>{t("dugulas_cim")}</h3>
+              <p>{t("dugulas1")}</p>
               <button className="learn-more">
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
@@ -80,13 +80,8 @@ export const Servic = () => {
               <img src={szippantas} alt="picture" className="servic-img" />
             </motion.div>
             <div className="text-container" ref={cont2.ref}>
-              <h3>Szennyvíz szippantás - szennyvíz elszállítás</h3>
-              <p>
-                Nem veszélyes hulladék iszap, szennyvíz elszállítását vállaljuk
-                az ügyfél által megadott helyen, aminek az elszállítása
-                szippantós tartálykocsival történik, majd a cégünk által
-                szerződött szennyvíztelepeken lesz tisztítva.
-              </p>
+              <h3>{t("szenyviz_cim")}</h3>
+              <p>{t("szenyviz1")}</p>
               <button className="learn-more">
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
@@ -99,16 +94,8 @@ export const Servic = () => {
           </div>
           <div className="3container container-left container" id="cont3">
             <div className="text-container" ref={cont3.ref}>
-              <h3>
-                Lefolyó cső ásás nélküli javítása <br /> (No dig technologia)
-              </h3>
-              <p>
-                A csatornarendszer feltárását követően gyakran egy vagy több
-                hibára derül fény, aminek az ásással - bontással történő
-                javítása komoly károkkal és kellemetlenséggel jár. Az innovatív
-                tehnológiának köszönhetően a legtöbb esetben a hibák javíthatóak
-                ásás nélkül, a lefolyócső belsejében kialakítva új felületet.
-              </p>
+              <h3>{t("nodig_cim")}</h3>
+              <p>{t("nodig1")}</p>
               <button className="learn-more">
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
@@ -143,16 +130,8 @@ export const Servic = () => {
               <img src={robot} alt="picture" className="servic-img" />
             </motion.div>
             <div className="text-container" ref={cont4.ref}>
-              <h3>Csatornavezetékek/lefolyócsövek videóvizsgálata(CCTV)</h3>
-              {/* TODO: megkerdezni hogy itt a cim jo e */}
-              <p>
-                A videóvizsgálat már nélkülözhetetlen művelet annak érdekében,
-                hogy meghatározzuk az elöregedett vezetékek állapotát, vagy
-                leellenőrizzük az elvégzett munkálatok minőségét. A CCTV
-                felszerelés megjeleníti a vezetékek belsejét, meghatározva
-                ezáltal a lefolyók megismétlődő dugulás okát, a csatornahálózat
-                hibás mükődését, a kiszívárgások lokációját, stb.
-              </p>
+              <h3>{t("camera_cim")}</h3>
+              <p>{t("camera")}</p>
               <button className="learn-more">
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
@@ -165,15 +144,8 @@ export const Servic = () => {
           </div>
           <div className="5container container-left container" id="cont5">
             <div className="text-container" ref={cont5.ref}>
-              <h3>
-                Csőtörés bemérés - vízveszteség mérés - vízvezeték és
-                fűtésrendszerből
-              </h3>
-              <p>
-                Nyomóvezetékeken keletkezett csőtörés műszeres bemérése amikor
-                szemmel nem látható, nem jelenik meg a felszínen a víz, mégis a
-                vízóra vízfogyasztást mér.
-              </p>
+              <h3>{t("meres_cim")}</h3>
+              <p>{t("meres1")}</p>
               <button className="learn-more">
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
@@ -199,5 +171,7 @@ export const Servic = () => {
         </div>
       </div>
     </>
+
+    // TODO: Röwşen
   );
 };

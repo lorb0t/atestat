@@ -34,8 +34,21 @@
     }
 
     h1,
+    h2,
+    h3,
+    ul,
+    li,
     p {
       text-align: left;
+    }
+    h1,
+    h2,
+    h3 {
+      color: white;
+    }
+
+    li {
+      color: rgb(184, 184, 184);
     }
   }
 

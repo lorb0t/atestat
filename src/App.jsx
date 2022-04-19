@@ -11,6 +11,10 @@ import { Footer } from "./components/Footer/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import { LearnMore } from "./pages/LearnMore/LearnMore";
+import { NoDig } from "./pages/NoDig/NoDig";
+import { Camera } from "./pages/Camera/Camera";
+import { Meres } from "./pages/Meres/Meres";
+
 import { LanguageModal } from "./components/Modal/LanguageModal";
 
 // ###############Learn More Import#########################
@@ -23,18 +27,6 @@ import dugulas_img3 from "./assets/Images/inliner.jpeg";
 import szenyviz_img1 from "./assets/Images/cleaning.png";
 import szenyviz_img2 from "./assets/Images/robot.jpg";
 import szenyviz_img3 from "./assets/Images/company-cars.png";
-
-import nodig_img1 from "./assets/Images/robot.jpg";
-import nodig_img2 from "./assets/Images/robot.jpg";
-import nodig_img3 from "./assets/Images/robot.jpg";
-
-import camera_img1 from "./assets/Images/robot.jpg";
-import camera_img2 from "./assets/Images/robot.jpg";
-import camera_img3 from "./assets/Images/robot.jpg";
-
-import meres_img1 from "./assets/Images/robot.jpg";
-import meres_img2 from "./assets/Images/robot.jpg";
-import meres_img3 from "./assets/Images/robot.jpg";
 
 // ###############Learn More Import#########################
 
@@ -89,9 +81,9 @@ const App = ({}) => {
               />
             }
           />
-          <Route path="/nodig" element={<LearnMore />} />
-          <Route path="/camera" element={<LearnMore />} />
-          <Route path="/meres" element={<LearnMore />} />
+          <Route path="/nodig" element={<NoDig />} />
+          <Route path="/camera" element={<Camera />} />
+          <Route path="/meres" element={<Meres />} />
         </Routes>
 
         <div className="footer__bg" id="footer">
