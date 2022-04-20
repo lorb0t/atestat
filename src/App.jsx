@@ -27,6 +27,7 @@ import dugulas_img3 from "./assets/Images/inliner.jpeg";
 import szenyviz_img1 from "./assets/Images/cleaning.png";
 import szenyviz_img2 from "./assets/Images/robot.jpg";
 import szenyviz_img3 from "./assets/Images/company-cars.png";
+import { PageGallery } from "./pages/PageGallery/PageGallery";
 
 // ###############Learn More Import#########################
 
@@ -84,6 +85,7 @@ const App = ({}) => {
           <Route path="/nodig" element={<NoDig />} />
           <Route path="/camera" element={<Camera />} />
           <Route path="/meres" element={<Meres />} />
+          <Route path="/gallery" element={<PageGallery />} />
         </Routes>
 
         <div className="footer__bg" id="footer">
