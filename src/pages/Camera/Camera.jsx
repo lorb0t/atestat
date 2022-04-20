@@ -7,6 +7,11 @@ import img3 from "../../assets/Images/robot.jpg";
 
 export const Camera = ({}) => {
   const { t, i18n } = useTranslation();
+  const language = () => {
+    if ("ro" === i18n.language) return true;
+    else return false;
+  };
+
   const vid_size = "400px";
 
   return (
@@ -17,9 +22,27 @@ export const Camera = ({}) => {
           <img src={img3} alt="" className="dugulas-img2" />
           <img src={img2} alt="" />
         </div>
-        <h1></h1>
+        <h1>{t("camera_cim")}</h1>
+        <p>{t("camera1")}</p>
+        <p>{t("camera2")}</p>
+        <h2>{t("camera3")}</h2>
+        <ul>
+          <li>{t("camera4_1")}</li>
+          <li>{t("camera4_2")}</li>
+          <li>{t("camera4_3")}</li>
+          <li>{t("camera4_4")}</li>
+          <li>{t("camera4_5")}</li>
+          <li>{t("camera4_6")}</li>
+          <li>{t("camera4_7")}</li>
+          <li>{t("camera4_8")}</li>
 
-        <p></p>
+          {!language() && (
+            <>
+              <li>{t("camera4_9")}</li>
+              <li>{t("camera4_10")}</li>
+            </>
+          )}
+        </ul>
 
         <div className="dugulas-youtube">
           <iframe

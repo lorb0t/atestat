@@ -135,7 +135,7 @@ $black: #282936;
   transition: $property $duration $ease;
 }
 
-button {
+.container button {
   position: relative;
   display: inline-block;
   cursor: pointer;
@@ -217,7 +217,9 @@ button {
       }
     }
     .button-text {
-      color: $white;
+      a {
+        color: $white;
+      }
     }
   }
 }

@@ -51,7 +51,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/dugulas">Tudj meg többet</Link>
+                  <Link to="/dugulas/">Tudj meg többet</Link>
                 </span>
               </button>
             </div>
@@ -101,7 +101,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/nodig">Tudj meg többet</Link>
+                  <Link to="/nodig/">Tudj meg többet</Link>
                 </span>
               </button>
             </div>
@@ -131,13 +131,13 @@ export const Servic = () => {
             </motion.div>
             <div className="text-container" ref={cont4.ref}>
               <h3>{t("camera_cim")}</h3>
-              <p>{t("camera")}</p>
+              <p>{t("camera1")}</p>
               <button className="learn-more">
                 <span className="circle" aria-hidden="true">
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/camera">Tudj meg többet</Link>
+                  <Link to="/camera/">Tudj meg többet</Link>
                 </span>
               </button>
             </div>
@@ -151,7 +151,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/csotores">Tudj meg többet</Link>
+                  <Link to="/meres/">Tudj meg többet</Link>
                 </span>
               </button>
             </div>

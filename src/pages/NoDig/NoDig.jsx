@@ -40,7 +40,7 @@ export const NoDig = ({}) => {
           <li>{t("nodig9_4")}</li>
           <li>{t("nodig9_5")}</li>
 
-          {!equalsRo && (
+          {equalsRo() && (
             <>
               <li>{t("nodig9_6")}</li>
               <li>{t("nodig9_7")}</li>
@@ -54,7 +54,7 @@ export const NoDig = ({}) => {
         <p>{t("nodig14")}</p>
         <h3>{t("nodig15")}</h3>
 
-        {!equalsRo && (
+        {!equalsRo() && (
           <ul>
             <li>{t("nodig16_1")}</li>
             <li>{t("nodig16_2")}</li>
@@ -71,10 +71,14 @@ export const NoDig = ({}) => {
         <p>{t("nodig22")}</p>
         <h3>{t("nodig23")}</h3>
         <ul>
-          <li>{t("nodig24_1")}</li>
-          <li>{t("nodig24_2")}</li>
-          <li>{t("nodig24_3")}</li>
-          <li>{t("nodig24_4")}</li>
+          {equalsRo() && (
+            <>
+              <li>{t("nodig24_1")}</li>
+              <li>{t("nodig24_2")}</li>
+              <li>{t("nodig24_3")}</li>
+              <li>{t("nodig24_4")}</li>
+            </>
+          )}
         </ul>
         <p>{t("nodig25")}</p>
         <p>{t("nodig26")}</p>
