@@ -29,35 +29,37 @@ export const LearnMore = ({
           <img src={img3} alt="" className="dugulas-img2" />
           <img src={img2} alt="" />
         </div>
-        <h1>{title}</h1>
+        <div className="text-text">
+          <h1>{title}</h1>
 
-        <p>{p1}</p>
-        <p>{p2}</p>
-        <p>{p3}</p>
-        <p>{p4}</p>
-        <p>{p5}</p>
+          <p>{p1}</p>
+          <p>{p2}</p>
+          <p>{p3}</p>
+          <p>{p4}</p>
+          <p>{p5}</p>
 
-        <div className="dugulas-youtube">
-          <iframe
-            src={yt1}
-            width={vid_size}
-            height={vid_size}
-            allow="fullscreen;"
-          ></iframe>
-          <div className="dugulas-vertical-line"></div>
-          <iframe
-            src={yt2}
-            width={vid_size}
-            height={vid_size}
-            allow="fullscreen;"
-          ></iframe>
-          <div className="dugulas-vertical-line"></div>
-          <iframe
-            src={yt3}
-            width={vid_size}
-            height={vid_size}
-            allow="fullscreen;"
-          ></iframe>
+          <div className="dugulas-youtube">
+            <iframe
+              src={yt1}
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+            <div className="dugulas-vertical-line"></div>
+            <iframe
+              src={yt2}
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+            <div className="dugulas-vertical-line"></div>
+            <iframe
+              src={yt3}
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+          </div>
         </div>
       </div>
     </div>

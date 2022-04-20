@@ -32,8 +32,6 @@ export const Header = () => {
               </Link>
             </button>
           </motion.div>
-
-          {/* TODO: a button vigyen a contact helyre */}
         </div>
         <div className="header_services">
           {[
