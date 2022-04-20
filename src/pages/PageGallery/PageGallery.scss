@@ -1,5 +1,24 @@
 .page_gallery_main {
-  margin-top: 10rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(27, 27, 27, 1) 21%,
+    rgba(47, 47, 47, 1) 38%,
+    rgba(57, 57, 57, 1) 49%,
+    rgba(57, 57, 57, 1) 55%,
+    rgba(47, 47, 47, 1) 65%,
+    rgba(27, 27, 27, 1) 82%,
+    rgba(0, 0, 0, 1) 95%
+  );
+  margin-top: 7.4rem;
+
+  h1 {
+    padding: 2rem;
+    text-transform: uppercase;
+    font-family: "Federo", sans-serif;
+    font-size: 65px;
+    color: wheat;
+  }
 }
 
 .gallery-g {
@@ -54,14 +73,14 @@
 }
 
 .model svg {
+  cursor: pointer;
   position: fixed;
   top: 10px;
   right: 10px;
-  width: 2rem;
-  height: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
   padding: 5px;
-  background-color: rgba(255, 255, 255, 0.544);
-  border-radius: 50%;
+  color: gray;
 }
 
 @media (max-width: 991px) {

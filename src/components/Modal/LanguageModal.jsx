@@ -21,6 +21,11 @@ export const LanguageModal = ({ showModal, setShowModal }) => {
     setShowModal(false);
   };
 
+  const isRo = () => {
+    if ("ro" === i18next.language) return true;
+    else return false;
+  };
+
   return (
     <AnimatePresence>
       {showModal && (
