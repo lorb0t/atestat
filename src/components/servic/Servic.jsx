@@ -40,7 +40,7 @@ export const Servic = () => {
         <img src={corner1line} alt="" className="corner-vec-right" />
         <img src={corner1line} alt="" className="corner-vec-left-bottom" />
         <img src={corner1line} alt="" className="corner-vec-right-bottom" />
-        <h1>Szolgaltatasok</h1>
+        <h1>{t("szolgaltatasok")}</h1>
         <div className="servic-containers">
           <div className="1container container-left container" id="cont1">
             <div className="text-container" id="cont1" ref={cont1.ref}>
@@ -51,7 +51,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/dugulas/">Tudj meg többet</Link>
+                  <Link to="/dugulas/">{t("learnMoreButton")}</Link>
                 </span>
               </button>
             </div>
@@ -87,7 +87,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/szenyviz">Tudj meg többet</Link>
+                  <Link to="/szenyviz">{t("learnMoreButton")}</Link>
                 </span>
               </button>
             </div>
@@ -101,7 +101,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/nodig/">Tudj meg többet</Link>
+                  <Link to="/nodig/">{t("learnMoreButton")}</Link>
                 </span>
               </button>
             </div>
@@ -137,7 +137,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/camera/">Tudj meg többet</Link>
+                  <Link to="/camera/">{t("learnMoreButton")}</Link>
                 </span>
               </button>
             </div>
@@ -151,7 +151,7 @@ export const Servic = () => {
                   <span className="icon arrow"></span>
                 </span>
                 <span className="button-text">
-                  <Link to="/meres/">Tudj meg többet</Link>
+                  <Link to="/meres/">{t("learnMoreButton")}</Link>
                 </span>
               </button>
             </div>

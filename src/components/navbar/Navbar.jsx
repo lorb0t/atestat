@@ -6,8 +6,11 @@ import "./Navbar.scss";
 import { Link as Link1 } from "react-router-dom";
 import { Link, animateScroll as scroll } from "react-scroll";
 // import "bootstrap/dist/css/bootstrap.min.css";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = ({ showModal, setShowModal }) => {
+  const { t, i18n } = useTranslation();
+
   const [toggleMenu, setToggleMenu] = useState(false);
 
   const Modal_toggle = () => {
@@ -29,23 +32,23 @@ export const Navbar = ({ showModal, setShowModal }) => {
           </div>
           <div className="navbar-links_container">
             {[
-              "home",
-              "szolgaltatasok",
-              "about",
-              "video",
-              "contact",
-              "gallery",
+              { name: t("home"), id: "home" },
+              { name: t("szolgaltatasok"), id: "szolgaltatasok" },
+              { name: t("about"), id: "about" },
+              { name: t("video"), id: "video" },
+              { name: t("contact"), id: "contact" },
+              { name: t("gallery"), id: "gallery" },
             ].map((item) => (
               <Link
                 activeClass="active"
-                key={item}
-                to={item}
+                key={item.id}
+                to={item.id}
                 spy={true}
                 smooth={true}
                 offset={-118}
                 duration={500}
               >
-                {item}
+                {item.name}
               </Link>
             ))}
           </div>
@@ -70,24 +73,24 @@ export const Navbar = ({ showModal, setShowModal }) => {
                 />
                 <div className="navbar-menu_container-links">
                   {[
-                    "home",
-                    "szolgaltatasok",
-                    "about",
-                    "video",
-                    "contact",
-                    "gallery",
+                    { name: t("home"), id: "home" },
+                    { name: t("szolgaltatasok"), id: "szolgaltatasok" },
+                    { name: t("about"), id: "about" },
+                    { name: t("video"), id: "video" },
+                    { name: t("contact"), id: "contact" },
+                    { name: t("gallery"), id: "gallery" },
                   ].map((item) => (
                     <Link
                       activeClass="active"
-                      to={item}
-                      key={item}
+                      to={item.id}
+                      key={item.id}
                       spy={true}
                       smooth={true}
                       offset={0}
                       duration={500}
                       onClick={() => setToggleMenu(false)}
                     >
-                      {item}
+                      {item.name}
                     </Link>
                   ))}
                   {/* FIXME: MAP HASZNALATA A NEVES NYELVES CUCC HASZNALATA AMIKOR MAS NYELV VAN HOGY TUDD HASZNALNI */}

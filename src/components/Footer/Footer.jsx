@@ -7,8 +7,11 @@ import "../../assets/Animations/logo_woble.css";
 import { Link } from "react-scroll";
 
 import { animateScroll as scroll } from "react-scroll";
+import { useTranslation } from "react-i18next";
 
 export const Footer = () => {
+  const { t, i18n } = useTranslation();
+
   const { ref, inView, entry } = useInView({
     threshold: 0,
   });
@@ -27,21 +30,25 @@ export const Footer = () => {
           <div className="footer-heading-explore">
             <p style={{ color: "white" }}>Explore</p>
             <div className="footer_services">
-              {["szolgaltatasok", "about", "video", "contact", "gallery"].map(
-                (item) => (
-                  <Link
-                    activeClass="active"
-                    key={item}
-                    to={item}
-                    spy={true}
-                    smooth={true}
-                    offset={-120}
-                    duration={500}
-                  >
-                    {item}
-                  </Link>
-                )
-              )}
+              {[
+                { name: t("szolgaltatasok"), id: "szolgaltatasok" },
+                { name: t("about"), id: "about" },
+                { name: t("video"), id: "video" },
+                { name: t("contact"), id: "contact" },
+                { name: t("gallery"), id: "gallery" },
+              ].map((item) => (
+                <Link
+                  activeClass="active"
+                  key={item.id}
+                  to={item.id}
+                  spy={true}
+                  smooth={true}
+                  offset={-120}
+                  duration={500}
+                >
+                  {item.name}
+                </Link>
+              ))}
             </div>
           </div>
           <div className="vertical_line"></div>

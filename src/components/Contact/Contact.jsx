@@ -11,8 +11,11 @@ import { IoLocationSharp } from "react-icons/io5";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 
+import { useTranslation } from "react-i18next";
+
 export const Contact = () => {
   const form = useRef();
+  const { t, i18n } = useTranslation();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -40,7 +43,7 @@ export const Contact = () => {
       <div className="big-main">
         <img src={corner} alt="" className="corner-piece-left about-corner" />
         <img src={corner} alt="" className="corner-piece-right about-corner" />
-        <h1>Contact</h1>
+        <h1>{t("contact")}</h1>
         <div className="main">
           <div className="main-follow">
             <div className="phone el">
@@ -82,7 +85,7 @@ export const Contact = () => {
           <div className="vertical-line"></div>
           <form className="main-form" ref={form}>
             <label htmlFor="name" className="label">
-              Name:
+              {t("name")}
             </label>
             <input
               type="text"
@@ -103,7 +106,7 @@ export const Contact = () => {
               tabIndex={2}
             />
             <label htmlFor="message" className="label">
-              Message:
+              {t("message")}
             </label>
             <textarea
               name="message"
@@ -122,7 +125,7 @@ export const Contact = () => {
                 "&:hover": { backgroundColor: "#079E00" },
               }}
             >
-              Send
+              {t("send")}
             </Button>
           </form>
         </div>

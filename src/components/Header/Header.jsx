@@ -28,7 +28,7 @@ export const Header = () => {
                 offset={-100}
                 duration={500}
               >
-                Contact with us
+                {t("contact")}
               </Link>
             </button>
           </motion.div>
@@ -37,11 +37,11 @@ export const Header = () => {
         </div>
         <div className="header_services">
           {[
-            { name: "Duguláselhárítás", id: "cont1" },
-            { name: " Szennyvíz szippantás", id: "cont2" },
-            { name: "Lefolyó cső ásás nélküli javítása", id: "cont3" },
-            { name: "A Csatorna videóvizsgálata(CCTV)", id: "cont4" },
-            { name: "Csőtörés bemérés", id: "cont5" },
+            { name: t("cont1"), id: "cont1" },
+            { name: t("cont2"), id: "cont2" },
+            { name: t("cont3"), id: "cont3" },
+            { name: t("cont4"), id: "cont4" },
+            { name: t("cont5"), id: "cont5" },
           ].map((item) => (
             <Link
               activeClass="active"
