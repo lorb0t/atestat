@@ -96,6 +96,15 @@ a:hover {
   display: inline;
   line-height: 2.5rem;
   margin: 0;
+
+  @media (max-width: 440px) {
+    line-height: 2rem;
+    font-size: 17px;
+  }
+  @media (max-width: 380px) {
+    line-height: 2rem;
+    font-size: 15px;
+  }
 }
 
 .inLine {
@@ -153,13 +162,18 @@ a:hover {
     margin-top: 3px;
   }
 
+  .footer-heading-name {
+    margin-left: 5%;
+  }
+
   .footer-heading-explore {
-    margin-left: 2%;
+    margin-left: 5%;
   }
 
   .footer-heading-img img {
     width: 40%;
     height: auto;
+    margin-left: 30%;
   }
 }
 
@@ -170,17 +184,15 @@ a:hover {
   }
 
   .footer-heading-explore {
-    margin-left: 2%;
+    margin-left: 10%;
   }
 
   .footer-heading-img {
     align-items: center;
   }
   .footer-heading-img img {
-    margin-left: 2rem;
+    margin-left: 5rem;
     width: 55%;
     height: auto;
   }
 }
-
-// FIXME: az a pici feher vonalka ami a lap aljan van fixeld meg
