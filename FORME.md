@@ -5,5 +5,4 @@
 - cim, iras, button, teljes kep(erje a szeleket), semmi animacio
 
 <!-- TODO: Contact -->
-<!-- TODO: VIDEO -->
 <!-- TODO: A GAlLERY BUTTON -->

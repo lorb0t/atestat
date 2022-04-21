@@ -10,7 +10,7 @@
     rgba(27, 27, 27, 1) 82%,
     rgba(0, 0, 0, 1) 95%
   );
-  margin-top: 7.4rem;
+  margin-top: 7.2rem;
 
   h1 {
     padding: 2rem;
@@ -93,5 +93,10 @@
   .gallery-g {
     column-count: 2;
     // column-width: 100%;
+  }
+  .page_gallery_main {
+    h1 {
+      font-size: 55px;
+    }
   }
 }

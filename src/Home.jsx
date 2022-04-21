@@ -20,17 +20,17 @@ export const Home = () => {
         <Servic />
       </div>
 
-      {/* <div className="video" id="video">
+      <div className="video" id="video">
         <Video />
-      </div> */}
+      </div>
 
-      {/* <div className="gallery" id="gallery">
+      <div className="gallery" id="gallery">
         <Gallery />
-      </div> */}
+      </div>
 
-      {/* <div className="contact" id="contact">
+      <div className="contact" id="contact">
         <Contact />
-      </div> */}
+      </div>
     </div>
   );
 };
