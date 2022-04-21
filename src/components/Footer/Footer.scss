@@ -41,7 +41,6 @@
 }
 
 .footer-heading-contact ul,
-.footer-heading-explore ul,
 .footer-heading-follow ul,
 .footer-heading-legal ul {
   margin-top: 2rem;
@@ -50,7 +49,6 @@
 }
 
 .footer-heading-contact li,
-.footer-heading-explore li,
 .footer-heading-follow li,
 .footer-heading-legal li {
   text-align: start;
@@ -121,7 +119,11 @@ a:hover {
 }
 
 .footer-heading-explore {
+  text-align: start;
   display: inline;
+
+  margin-left: 9%;
+
   p {
     margin-top: 2.5rem;
     text-align: left;
@@ -135,7 +137,6 @@ a:hover {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 
   a {
     text-decoration: none;
@@ -151,7 +152,8 @@ a:hover {
   }
 
   .footer-heading {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
   .footer-heading-name,
@@ -162,18 +164,18 @@ a:hover {
     margin-top: 3px;
   }
 
-  .footer-heading-name {
-    margin-left: 5%;
-  }
-
-  .footer-heading-explore {
-    margin-left: 5%;
-  }
-
   .footer-heading-img img {
-    width: 40%;
+    width: 60%;
     height: auto;
-    margin-left: 30%;
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-heading {
+    grid-template-columns: auto;
+  }
+  .footer-heading-img img {
+    margin-left: 10.5rem;
   }
 }
 
@@ -183,16 +185,12 @@ a:hover {
     margin-left: 0;
   }
 
-  .footer-heading-explore {
-    margin-left: 10%;
-  }
-
   .footer-heading-img {
     align-items: center;
   }
   .footer-heading-img img {
-    margin-left: 5rem;
-    width: 55%;
+    width: 70%;
     height: auto;
+    margin-left: 20%;
   }
 }
