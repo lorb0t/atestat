@@ -20,6 +20,8 @@ export const Gallery = () => {
   const inter = 2500;
   const { t, i18n } = useTranslation();
 
+  const isMobile = window.innerWidth < 1500;
+
   return (
     <div className="gallery_main">
       <h1>{t("gallery")}</h1>
@@ -48,7 +50,9 @@ export const Gallery = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div className="link_wrapper">
+      <div
+        className={isMobile ? "link_wrapper gallery_mobile" : "link_wrapper"}
+      >
         <Link to="/gallery">{t("toGallery")}</Link>
         <div className="button-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">

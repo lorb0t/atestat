@@ -16,19 +16,19 @@ export const Home = () => {
         <About />
       </div>
 
-      <div className="servic" id="szolgaltatasok">
+      {/* <div className="servic" id="szolgaltatasok">
         <Servic />
-      </div>
+      </div> */}
 
       {/* <div className="video" id="video">
         <Video />
-      </div>
+      </div> */}
 
       <div className="gallery" id="gallery">
         <Gallery />
       </div>
 
-      <div className="contact" id="contact">
+      {/* <div className="contact" id="contact">
         <Contact />
       </div> */}
     </div>

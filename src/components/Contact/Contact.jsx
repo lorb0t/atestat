@@ -38,6 +38,8 @@ export const Contact = () => {
   };
   const icon_color = "#BCB4B4";
 
+  const isMobile = window.innerWidth < 650;
+
   return (
     <>
       <div className="big-main">
@@ -48,7 +50,11 @@ export const Contact = () => {
           <div className="main-follow">
             <div className="phone el">
               <div className="follow-icon">
-                <FiPhoneCall color={icon_color} size={30} />
+                <FiPhoneCall
+                  color={icon_color}
+                  size={30}
+                  className="servic-icon"
+                />
               </div>
               <a href="tel:+40744.395.333" className="usable_links">
                 +40744.395.333
@@ -56,7 +62,7 @@ export const Contact = () => {
             </div>
             <div className="fax el">
               <div className="follow-icon">
-                <FaFax color={icon_color} size={27} className="fax-icon" />
+                <FaFax color={icon_color} size={27} className="servic-icon" />
               </div>
               <a href="fax:+40365.430.415" className="usable_links">
                 +40365.430.415
@@ -64,7 +70,7 @@ export const Contact = () => {
             </div>
             <div className="follow-email el">
               <div className="follow-icon">
-                <MdEmail color={icon_color} size={30} />
+                <MdEmail color={icon_color} size={30} className="servic-icon" />
               </div>
               <a href="mailto:info@cleanspeed.ro" className="usable_links">
                 info@cleanspeed.ro
@@ -72,7 +78,11 @@ export const Contact = () => {
             </div>
             <div className="follow-location el">
               <div className="follow-icon">
-                <IoLocationSharp color={icon_color} size={30} />
+                <IoLocationSharp
+                  color={icon_color}
+                  size={30}
+                  className="servic-icon"
+                />
               </div>
               <a
                 href="https://www.google.ro/maps/place/CLEAN+SPEED/@46.5273753,24.5473672,17z/data=!3m1!4b1!4m5!3m4!1s0x474bb7bf659dc3b3:0xe7b01ffe900ad63b!8m2!3d46.5273664!4d24.5495363?hl=ro"
