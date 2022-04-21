@@ -20,7 +20,7 @@ export const Home = () => {
         <Servic />
       </div>
 
-      <div className="video" id="video">
+      {/* <div className="video" id="video">
         <Video />
       </div>
 
@@ -30,7 +30,7 @@ export const Home = () => {
 
       <div className="contact" id="contact">
         <Contact />
-      </div>
+      </div> */}
     </div>
   );
 };

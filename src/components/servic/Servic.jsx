@@ -33,6 +33,8 @@ export const Servic = () => {
 
   const { t, i18n } = useTranslation();
 
+  const isMobile = window.innerWidth < 1760;
+
   return (
     <>
       <div className="servic_main">

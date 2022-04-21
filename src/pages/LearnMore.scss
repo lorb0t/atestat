@@ -39,10 +39,17 @@
     h1,
     h2,
     h3,
-    li,
+    // li,
+    ul,
     p {
       text-align: left;
+      padding: 0 7%;
     }
+
+    ul {
+      padding-left: 10%;
+    }
+
     h1,
     h2,
     h3 {
