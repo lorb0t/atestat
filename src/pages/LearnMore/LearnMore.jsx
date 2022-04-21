@@ -19,7 +19,6 @@ export const LearnMore = ({
   s5,
 }) => {
   const { t, i18n } = useTranslation();
-  const vid_size = "400px";
 
   return (
     <div className="dugulas-main">
@@ -39,26 +38,11 @@ export const LearnMore = ({
           <p>{p5}</p>
 
           <div className="dugulas-youtube">
-            <iframe
-              src={yt1}
-              width={vid_size}
-              height={vid_size}
-              allow="fullscreen;"
-            ></iframe>
+            <iframe src={yt1} allow="fullscreen;"></iframe>
             <div className="dugulas-vertical-line"></div>
-            <iframe
-              src={yt2}
-              width={vid_size}
-              height={vid_size}
-              allow="fullscreen;"
-            ></iframe>
+            <iframe src={yt2} allow="fullscreen;"></iframe>
             <div className="dugulas-vertical-line"></div>
-            <iframe
-              src={yt3}
-              width={vid_size}
-              height={vid_size}
-              allow="fullscreen;"
-            ></iframe>
+            <iframe src={yt3} allow="fullscreen;"></iframe>
           </div>
         </div>
       </div>

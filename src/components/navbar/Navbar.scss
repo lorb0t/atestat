@@ -115,7 +115,7 @@
   right: 0;
   z-index: 5;
 
-  background: grey;
+  background: black;
   padding: 1rem;
 
   width: 100%;
@@ -128,6 +128,7 @@
 }
 
 .navbar-menu_container-links {
+  font-size: 20px;
   line-height: 38px;
   cursor: pointer;
   text-transform: uppercase;
@@ -140,7 +141,7 @@
 }
 
 .navbar-menu-close-button {
-  margin-left: 80%;
+  margin-left: 90%;
   margin-top: 0;
 }
 

@@ -53,10 +53,10 @@ const App = ({}) => {
                 p2={t("dugulas2")}
                 p3={t("dugulas3")}
                 p4={t("dugulas4")}
-                p5={t("dugulas1")}
-                yt1=""
-                yt2=""
-                yt3=""
+                p5={t("dugulas5")}
+                yt1="https://www.youtube.com/embed/HaX5xOS3K9M"
+                yt2="https://www.youtube.com/embed/HaX5xOS3K9M"
+                yt3="https://www.youtube.com/embed/HaX5xOS3K9M"
                 img1={dugulas_img1}
                 img2={dugulas_img2}
                 img3={dugulas_img3}

@@ -16,7 +16,8 @@
     position: relative;
     top: -15%;
 
-    background-color: gray;
+    background-color: black;
+    border: 4px solid white;
     width: fit-content;
     height: fit-content;
     padding: 1rem 1.5rem;
@@ -29,7 +30,7 @@
       padding: 4px;
 
       &:hover {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(128, 128, 128, 0.349);
         border-radius: 5px;
         border-left: 4px solid green;
       }
