@@ -93,7 +93,6 @@ export const Navbar = ({ showModal, setShowModal }) => {
                       {item.name}
                     </Link>
                   ))}
-                  {/* FIXME: MAP HASZNALATA A NEVES NYELVES CUCC HASZNALATA AMIKOR MAS NYELV VAN HOGY TUDD HASZNALNI */}
                 </div>
               </div>
             )}

@@ -24,7 +24,6 @@ export const Footer = () => {
             <h1> S.C. CLEAN SPEED S.R.L.</h1>
             <br />
             <h3>Fuss gyorsan kisbeka!</h3>
-            {/* TODO: kell egy motto */}
           </div>
           <div className="vertical_line"></div>
           <div className="footer-heading-explore">
@@ -118,7 +117,6 @@ export const Footer = () => {
             }`}
           >
             <img src={logo} alt="logo" ref={ref} />
-            {/* TODO: csak akkor jojjon be a cucc mikor odagorgetunk */}
           </div>
         </div>
       </div>
