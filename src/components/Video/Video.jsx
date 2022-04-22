@@ -50,9 +50,9 @@ export const Video = () => {
         <div className="mute-btn-overlay-active">
           <div className="mute-btn" onClick={handleSound}>
             {playSound ? (
-              <BsFillVolumeUpFill color="white" fontSize={35} />
+              <BsFillVolumeUpFill color="white" className="volume-btn" />
             ) : (
-              <BsFillVolumeMuteFill color="white" fontSize={35} />
+              <BsFillVolumeMuteFill color="white" className="volume-btn" />
             )}
           </div>
         </div>
@@ -61,17 +61,17 @@ export const Video = () => {
         <div className="video-overlay">
           <div className="video-overlay-circle" onClick={handleVideo}>
             {playVideo ? (
-              <BsFillPauseFill color="white" fontSize={40} />
+              <BsFillPauseFill color="white" className="play-btn" />
             ) : (
-              <BsFillPlayFill color="white" fontSize={40} />
+              <BsFillPlayFill color="white" className="play-btn" />
             )}
           </div>
           <div className="mute-btn-overlay">
             <div className="mute-btn" onClick={handleSound}>
               {playSound ? (
-                <BsFillVolumeUpFill color="white" fontSize={35} />
+                <BsFillVolumeUpFill color="white" className="volume-btn" />
               ) : (
-                <BsFillVolumeMuteFill color="white" fontSize={35} />
+                <BsFillVolumeMuteFill color="white" className="volume-btn" />
               )}
             </div>
           </div>

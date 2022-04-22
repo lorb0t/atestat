@@ -17,16 +17,20 @@ import { Carousel } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 export const Gallery = () => {
-  const inter = 2500;
+  let inter = 2500;
   const { t, i18n } = useTranslation();
 
-  const isMobile = window.innerWidth < 1500;
+  const isMobile = window.innerWidth < 1020;
+
+  if (isMobile) {
+    inter = 15000;
+  }
 
   return (
     <div className="gallery_main">
       <h1>{t("gallery")}</h1>
       <div className="gallery-images">
-        <Carousel pause="false">
+        <Carousel pause="false" touch="true">
           <Carousel.Item interval={inter}>
             <img className="d-block" src={img1} alt="Second slide" />
           </Carousel.Item>

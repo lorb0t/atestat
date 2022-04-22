@@ -20,14 +20,20 @@
     font-size: 67px;
     letter-spacing: 2.5px;
     text-transform: uppercase;
-    line-height: 8rem;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    // line-height: 8rem;
   }
-  @media (max-width: 1760px) {
+  @media (max-width: 1360px) {
     .corner-vec-left,
     .corner-vec-left-bottom,
     .corner-vec-right,
     .corner-vec-right-bottom {
       display: none;
+    }
+
+    h1 {
+      padding-bottom: 0;
     }
   }
 
@@ -38,7 +44,12 @@
   }
   @media (max-width: 400px) {
     h1 {
-      font-size: 32px;
+      font-size: 40px;
+    }
+  }
+  @media (max-width: 335px) {
+    h1 {
+      font-size: 37px;
     }
   }
 }
@@ -71,19 +82,32 @@
     grid-template-columns: 50rem auto;
     column-gap: 10%;
 
+    // justify-content: left;
+
     h3,
     p {
       text-align: left;
     }
+    @media (max-width: 1752px) {
+      grid-template-columns: 30rem 30rem;
+      column-gap: 7%;
+    }
   }
 
   .container-right {
-    grid-template-columns: auto 50rem;
+    grid-template-columns: auto 30rem;
     column-gap: 10%;
 
     h3,
     p {
       text-align: right;
+    }
+
+    // justify-content: left;
+
+    @media (max-width: 1752px) {
+      grid-template-columns: 50rem 30rem;
+      column-gap: 7%;
     }
   }
 
@@ -92,16 +116,55 @@
       border-radius: 20px;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.23),
         0 6px 20px 0 rgba(0, 0, 0, 0.22);
+
+      @media (max-width: 1752px) {
+        width: auto;
+        height: 30rem;
+      }
+      @media (max-width: 1360px) {
+        border-radius: 0;
+      }
+      @media (max-width: 710px) {
+        width: 25rem;
+        height: auto;
+      }
+      @media (max-width: 490px) {
+        width: 22rem;
+        height: auto;
+      }
+      @media (max-width: 440px) {
+        width: 20rem;
+        height: auto;
+      }
+      @media (max-width: 410px) {
+        width: 18rem;
+        height: auto;
+      }
+      @media (max-width: 380px) {
+        width: 15rem;
+        height: auto;
+      }
+      @media (max-width: 340px) {
+        width: 15rem;
+        height: auto;
+      }
     }
   }
 
   .text-container {
     h3 {
       font-size: 40px;
+
+      @media (max-width: 1752px) {
+        font-size: 37px;
+      }
     }
     p {
       font-size: 23px;
       color: rgb(49, 49, 49);
+      @media (max-width: 1752px) {
+        font-size: 20px;
+      }
     }
 
     h3,
@@ -121,9 +184,17 @@
         font-size: 20px;
       }
     }
+    @media (max-width: 450px) {
+      p {
+        font-size: 16px;
+      }
+      h3 {
+        font-size: 25px;
+      }
+    }
   }
 
-  @media (max-width: 1760px) {
+  @media (max-width: 1360px) {
     .container {
       grid-template-columns: auto;
       h3,
