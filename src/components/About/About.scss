@@ -4,7 +4,7 @@
   background-size: cover;
   background-position: center;
   height: fit-content;
-  width: fit-content;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -23,11 +23,15 @@
 
     margin: 2% 10%;
 
+    @media (max-width: 375px) {
+      margin: 2% 3%;
+    }
+
     .about-text {
       align-items: center;
       padding-top: 1.5rem;
-      padding-left: clamp(1rem, 50%, 20rem);
-      padding-right: clamp(1rem, 50%, 20rem);
+      padding-left: 10%;
+      padding-right: 10%;
 
       h1,
       p {
@@ -54,6 +58,17 @@
         p {
           font-size: 18px;
         }
+      }
+      @media screen and (max-width: 375px) {
+        h1 {
+          font-size: 27px;
+          letter-spacing: 5px;
+        }
+        p {
+          font-size: 15px;
+        }
+        padding-right: 2%;
+        padding-left: 2%;
       }
     }
 
@@ -120,6 +135,17 @@
             rgba(252, 175, 69, 1) 83%,
             rgba(255, 220, 128, 1) 100%
           );
+        }
+      }
+
+      @media (max-width: 400px) {
+        grid-template-columns: 3rem 3rem 3rem;
+        $Size-font: 30px;
+
+        .to-face,
+        .to-insta,
+        .to-you {
+          font-size: $Size-font;
         }
       }
     }

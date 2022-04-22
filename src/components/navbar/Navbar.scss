@@ -186,3 +186,9 @@
     padding: 2rem;
   }
 }
+@media screen and (max-width: 360px) {
+  .navbar-links_logo h1 {
+    font-size: 26px;
+    line-height: 2rem;
+  }
+}

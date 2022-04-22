@@ -38,7 +38,7 @@ export const Contact = () => {
   };
   const icon_color = "#BCB4B4";
 
-  const isMobile = window.innerWidth < 650;
+  // const isMobile = window.innerWidth < 650;
 
   return (
     <>
@@ -52,7 +52,7 @@ export const Contact = () => {
               <div className="follow-icon">
                 <FiPhoneCall
                   color={icon_color}
-                  size={30}
+                  // size={30}
                   className="servic-icon"
                 />
               </div>
@@ -62,7 +62,11 @@ export const Contact = () => {
             </div>
             <div className="fax el">
               <div className="follow-icon">
-                <FaFax color={icon_color} size={27} className="servic-icon" />
+                <FaFax
+                  color={icon_color}
+                  // size={27}
+                  className="servic-icon"
+                />
               </div>
               <a href="fax:+40365.430.415" className="usable_links">
                 +40365.430.415
@@ -70,7 +74,11 @@ export const Contact = () => {
             </div>
             <div className="follow-email el">
               <div className="follow-icon">
-                <MdEmail color={icon_color} size={30} className="servic-icon" />
+                <MdEmail
+                  color={icon_color}
+                  // size={30}
+                  className="servic-icon"
+                />
               </div>
               <a href="mailto:info@cleanspeed.ro" className="usable_links">
                 info@cleanspeed.ro
@@ -80,7 +88,7 @@ export const Contact = () => {
               <div className="follow-icon">
                 <IoLocationSharp
                   color={icon_color}
-                  size={30}
+                  // size={30}
                   className="servic-icon"
                 />
               </div>

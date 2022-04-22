@@ -54,9 +54,7 @@ export const Gallery = () => {
           </Carousel.Item>
         </Carousel>
       </div>
-      <div
-        className={isMobile ? "link_wrapper gallery_mobile" : "link_wrapper"}
-      >
+      <div className="link_wrapper">
         <Link to="/gallery">{t("toGallery")}</Link>
         <div className="button-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">

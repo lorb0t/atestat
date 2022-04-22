@@ -9,6 +9,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
+  background-color: rgb(29, 28, 29);
 }
 
 .gradient__bg {
@@ -16,5 +17,5 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  /* background-color: var(--color-bg); */
 }
