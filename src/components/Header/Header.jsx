@@ -20,7 +20,7 @@ export const Header = () => {
           <h3>{t("header_motto")}</h3>
 
           <motion.div whileHover={{ scale: 1.2 }}>
-            <button className="button">
+            <button className="button Rowsen">
               <Link
                 to="contact"
                 spy={true}

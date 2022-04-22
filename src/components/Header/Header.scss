@@ -44,14 +44,27 @@
       h1,
       h2,
       h3 {
-        -webkit-text-stroke-width: 0.5px;
-        -webkit-text-stroke-color: gray;
+        // -webkit-text-stroke-width: 0.5px;
+        // -webkit-text-stroke-color: white;
+        color: whitesmoke;
       }
     }
     @media screen and (max-width: 1600px) {
       .header_comp-motto {
         h1 {
           font-size: 50px;
+        }
+      }
+    }
+
+    @media screen and (max-width: 500px) {
+      .Rowsen {
+        margin-bottom: 10rem;
+      }
+
+      .header_comp-motto {
+        h1 {
+          margin-top: 3rem;
         }
       }
     }
@@ -81,6 +94,26 @@
 
         &:hover {
           animation: slide-right 0.5s ease-in-out forwards;
+
+          @media (max-width: 810px) {
+            animation: none;
+          }
+        }
+      }
+    }
+
+    @media screen and (max-width: 1450px) {
+      .header_comp-motto {
+        h3 {
+          font-size: 23px;
+        }
+        h2 {
+          font-size: 25px;
+        }
+      }
+      .header_services {
+        a {
+          font-size: 25px;
         }
       }
     }
@@ -100,23 +133,20 @@
       }
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 570px) {
       .header_comp-motto {
         h3 {
-          font-size: 30px;
-        }
-        h2 {
-          font-size: 25px;
-        }
-      }
-      .header_services {
-        a {
-          font-size: 25px;
+          font-size: 20px;
         }
       }
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 500px) {
+      .header_services {
+        a {
+          font-size: 23px;
+        }
+      }
     }
   }
 
