@@ -1,6 +1,6 @@
 import "./Contact.scss";
 import corner from "../../assets/Images_for_web/corner.svg";
-import { useRef } from "react";
+import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 
 import { FiPhoneCall } from "react-icons/fi";
@@ -22,16 +22,20 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_tlnwtvy", //service Id
+        "template_aasgko2",
+        // form.current,
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "DlFgtAwRZeNciL-NZ"
       )
       .then(
         (result) => {
+          // console.log(form.current);
+          window.location.reload(false);
           console.log(result.text);
         },
         (error) => {
+          alert("ERROR");
           console.log(error.text);
         }
       );
@@ -101,16 +105,17 @@ export const Contact = () => {
             </div>
           </div>
           <div className="vertical-line"></div>
-          <form className="main-form" ref={form}>
-            <label htmlFor="name" className="label">
+          <form className="main-form" ref={form} onSubmit={sendEmail}>
+            <label htmlFor="from_name" className="label">
               {t("name")}
             </label>
             <input
               type="text"
-              name="name"
+              name="from_name"
               className="name cont"
-              placeholder="Name"
+              placeholder={t("name_1")}
               tabIndex={1}
+              required
             ></input>
             <label htmlFor="email" className="label">
               E-mail:
@@ -122,6 +127,7 @@ export const Contact = () => {
               className="email cont"
               placeholder="example@gmail.com"
               tabIndex={2}
+              required
             />
             <label htmlFor="message" className="label">
               {t("message")}
@@ -129,15 +135,17 @@ export const Contact = () => {
             <textarea
               name="message"
               id="message"
-              placeholder="Irjal ocsem..."
+              placeholder={t("message_1")}
               className="message cont"
               tabIndex={3}
+              required
             ></textarea>
             <Button
               variant="contained"
               endIcon={<SendIcon />}
               className="send-button"
-              onClick={sendEmail}
+              type="submit"
+              // onClick={sendEmail}
               sx={{
                 backgroundColor: "#000000",
                 "&:hover": { backgroundColor: "#079E00" },

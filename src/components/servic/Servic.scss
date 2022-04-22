@@ -40,16 +40,17 @@
   @media (max-width: 620px) {
     h1 {
       font-size: 45px;
+      letter-spacing: 2px;
     }
   }
   @media (max-width: 400px) {
     h1 {
-      font-size: 40px;
+      font-size: 37px;
     }
   }
-  @media (max-width: 335px) {
+  @media (max-width: 345px) {
     h1 {
-      font-size: 37px;
+      font-size: 34px;
     }
   }
 }
@@ -275,6 +276,9 @@ $black: #282936;
       height: 3rem;
       background: $black;
       border-radius: 1.625rem;
+      @media (max-width: 810px) {
+        width: 100%;
+      }
       .icon {
         @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
         position: absolute;
@@ -288,6 +292,9 @@ $black: #282936;
           width: 1.125rem;
           height: 0.125rem;
           background: none;
+          // @media (max-width: 810px) {
+          //   background: $white;
+          // }
           &::before {
             position: absolute;
             content: "";
@@ -316,9 +323,13 @@ $black: #282936;
       line-height: 1.6;
       text-align: center;
       text-transform: uppercase;
+
       a {
         text-decoration: none;
         color: $black;
+        @media (max-width: 810px) {
+          color: $white;
+        }
       }
     }
   }
@@ -340,17 +351,17 @@ $black: #282936;
   }
 }
 
-@supports (display: grid) {
-  body {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0.625rem;
-    grid-template-areas: ". main main ." ". main main .";
-  }
+// @supports (display: grid) {
+//   body {
+//     display: grid;
+//     grid-template-columns: repeat(4, 1fr);
+//     grid-gap: 0.625rem;
+//     grid-template-areas: ". main main ." ". main main .";
+//   }
 
-  #container {
-    grid-area: main;
-    align-self: center;
-    justify-self: center;
-  }
-}
+//   #container {
+//     grid-area: main;
+//     align-self: center;
+//     justify-self: center;
+//   }
+// }

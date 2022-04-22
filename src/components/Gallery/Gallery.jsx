@@ -4,10 +4,10 @@ import "../../assets/Animations/nicebutton.scss";
 import { Link } from "react-router-dom";
 
 import img1 from "../../assets/Images/wc_dugulas.jpg";
-import img2 from "../../assets/Images/company-cars.png";
-import img3 from "../../assets/Images/company_house.png";
+import img2 from "../../assets/Images/Kamion1.jpeg";
+import img3 from "../../assets/Images/inliner.jpeg";
 import img4 from "../../assets/Images/robot.jpg";
-import img5 from "../../assets/Images/company_house.png";
+import img5 from "../../assets/Images/cctv-pipe.png";
 import img6 from "../../assets/Images/bemeres.jpg";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -17,14 +17,9 @@ import { Carousel } from "react-bootstrap";
 import { useTranslation } from "react-i18next";
 
 export const Gallery = () => {
-  let inter = 2500;
   const { t, i18n } = useTranslation();
 
-  const isMobile = window.innerWidth < 1020;
-
-  if (isMobile) {
-    inter = 15000;
-  }
+  const inter = 2500;
 
   return (
     <div className="gallery_main">
