@@ -1,4 +1,6 @@
-<!-- TODO: put a suspens loading icon -->
+#
+
+TODO: put a suspens loading icon
 
 # FOOTER
 
@@ -8,6 +10,3 @@
 # VIDEO
 
 - nagyitas -> teljes kepernyo
-
-<!-- # HEADER
-- anim out -->
