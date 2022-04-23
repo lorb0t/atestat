@@ -64,6 +64,7 @@ export const Servic = () => {
                   <img src={cleaning} alt="picture" className="servic-img" />
                 </div>
               </div>
+              <div className="horizontal-line"></div>
               <div className="2container container-right container" id="cont2">
                 <div className="text-container" ref={cont2.ref}>
                   <h3>{t("szenyviz_cim")}</h3>
@@ -81,6 +82,7 @@ export const Servic = () => {
                   <img src={szippantas} alt="picture" className="servic-img" />
                 </div>
               </div>
+              <div className="horizontal-line"></div>
               <div className="3container container-left container" id="cont3">
                 <div className="text-container" ref={cont3.ref}>
                   <h3>{t("nodig_cim")}</h3>
@@ -98,6 +100,7 @@ export const Servic = () => {
                   <img src={inliner} alt="picture" className="servic-img" />
                 </div>
               </div>
+              <div className="horizontal-line"></div>
               <div className="4container container-right container" id="cont4">
                 <div className="text-container" ref={cont4.ref}>
                   <h3>{t("camera_cim")}</h3>
@@ -115,6 +118,7 @@ export const Servic = () => {
                   <img src={robot} alt="picture" className="servic-img" />
                 </div>
               </div>
+              <div className="horizontal-line"></div>
               <div className="5container container-left container" id="cont5">
                 <div className="text-container" ref={cont5.ref}>
                   <h3>{t("meres_cim")}</h3>

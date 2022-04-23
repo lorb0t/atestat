@@ -1,12 +1,12 @@
-#
-
-TODO: put a suspens loading icon
-
 # FOOTER
 
 - fuss gyorsan kisbeka🤪
 - terms and privacy
 
-# VIDEO
+# HEADER
 
-- nagyitas -> teljes kepernyo
+- design
+
+# KEywords
+
+- tobb es szedd ki a commentet

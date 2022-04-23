@@ -352,6 +352,11 @@ $black: #282936;
   }
 }
 
+.horizontal-line {
+  margin-top: 20px;
+  border: 1.5px solid rgb(187, 182, 182);
+  width: 100%;
+}
 // @supports (display: grid) {
 //   body {
 //     display: grid;

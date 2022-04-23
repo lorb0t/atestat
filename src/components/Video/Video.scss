@@ -93,3 +93,46 @@
     background-color: rgba(0, 0, 0, 0);
   }
 }
+
+.Youtube-link {
+  background-color: rgb(23, 23, 23);
+  padding: 1rem 0;
+
+  text-align: left;
+
+  span {
+    margin-left: 15%;
+    color: white;
+    font-size: 24px;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+
+    span {
+      margin-left: 20px;
+      background-color: white;
+      border-radius: 60%;
+    }
+
+    svg {
+      // background-color: white;
+      font-size: 60px;
+      color: red;
+      // margin-left: 20px;
+      // border-radius: 20%;
+    }
+  }
+
+  @media (max-width: 430px) {
+    span {
+      font-size: 20px;
+      margin-left: 10%;
+    }
+  }
+  @media (max-width: 345px) {
+    span {
+      margin-left: 4%;
+    }
+  }
+}
