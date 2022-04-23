@@ -253,6 +253,7 @@ $black: #282936;
 }
 
 .container button {
+  z-index: 2;
   position: relative;
   display: inline-block;
   cursor: pointer;

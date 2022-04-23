@@ -30,11 +30,11 @@ export const Footer = () => {
             <p style={{ color: "white" }}>Explore</p>
             <div className="footer_services">
               {[
-                { name: t("szolgaltatasok"), id: "szolgaltatasok" },
                 { name: t("about"), id: "about" },
+                { name: t("szolgaltatasok"), id: "szolgaltatasok" },
                 { name: t("video"), id: "video" },
-                { name: t("contact"), id: "contact" },
                 { name: t("gallery"), id: "gallery" },
+                { name: t("contact"), id: "contact" },
               ].map((item) => (
                 <Link
                   activeClass="active"
@@ -138,8 +138,8 @@ export const Footer = () => {
             </span>{" "}
             &{" "}
             <span>
-              <a href="https://www.google.com/">
-                <span className="inLine">lorbot</span>
+              <a href="mailto:kulcsarlory@gmail.com" className="usable_links">
+                <span>lorbot</span>
               </a>
             </span>
           </p>

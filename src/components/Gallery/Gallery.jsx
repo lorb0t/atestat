@@ -2,6 +2,7 @@ import "./Gallery.scss";
 import "../../assets/Animations/nicebutton.scss";
 
 import { Link } from "react-router-dom";
+// import { useEffect } from "react";
 
 import img1 from "../../assets/Images/wc_dugulas.jpg";
 import img2 from "../../assets/Images/Kamion1.jpeg";

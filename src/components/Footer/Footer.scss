@@ -122,7 +122,9 @@ a:hover {
   text-align: start;
   display: inline;
 
-  margin-left: 9%;
+  @media (max-width: 700px) {
+    margin-left: 9%;
+  }
 
   p {
     margin-top: 2.5rem;
@@ -176,6 +178,17 @@ a:hover {
   }
   .footer-heading-img img {
     margin-left: 10.5rem;
+  }
+}
+
+@media (max-width: 580px) {
+  .footer-heading-img img {
+    margin-left: 8rem;
+  }
+}
+@media (max-width: 520px) {
+  .footer-heading-img img {
+    margin-left: 6rem;
   }
 }
 

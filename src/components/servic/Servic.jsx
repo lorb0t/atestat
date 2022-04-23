@@ -198,7 +198,7 @@ export const Servic = () => {
                       <span className="icon arrow"></span>
                     </span>
                     <span className="button-text">
-                      <Link to="/nodig/">{t("learnMoreButton")}</Link>
+                      <Link to="/nodig">{t("learnMoreButton")}</Link>
                     </span>
                   </button>
                 </div>

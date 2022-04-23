@@ -1,5 +1,6 @@
 import "../LearnMore.scss";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 export const LearnMore = ({
   title,
@@ -19,6 +20,13 @@ export const LearnMore = ({
   s5,
 }) => {
   const { t, i18n } = useTranslation();
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("ran");
+      return window.scrollTo(0, 0);
+    }, 1000);
+  });
 
   return (
     <div className="dugulas-main">

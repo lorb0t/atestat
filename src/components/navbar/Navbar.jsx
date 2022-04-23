@@ -33,11 +33,11 @@ export const Navbar = ({ showModal, setShowModal }) => {
           <div className="navbar-links_container">
             {[
               { name: t("home"), id: "home" },
-              { name: t("szolgaltatasok"), id: "szolgaltatasok" },
               { name: t("about"), id: "about" },
+              { name: t("szolgaltatasok"), id: "szolgaltatasok" },
               { name: t("video"), id: "video" },
-              { name: t("contact"), id: "contact" },
               { name: t("gallery"), id: "gallery" },
+              { name: t("contact"), id: "contact" },
             ].map((item) => (
               <Link
                 activeClass="active"
@@ -74,11 +74,11 @@ export const Navbar = ({ showModal, setShowModal }) => {
                 <div className="navbar-menu_container-links">
                   {[
                     { name: t("home"), id: "home" },
-                    { name: t("szolgaltatasok"), id: "szolgaltatasok" },
                     { name: t("about"), id: "about" },
+                    { name: t("szolgaltatasok"), id: "szolgaltatasok" },
                     { name: t("video"), id: "video" },
-                    { name: t("contact"), id: "contact" },
                     { name: t("gallery"), id: "gallery" },
+                    { name: t("contact"), id: "contact" },
                   ].map((item) => (
                     <Link
                       activeClass="active"
@@ -86,7 +86,7 @@ export const Navbar = ({ showModal, setShowModal }) => {
                       key={item.id}
                       spy={true}
                       smooth={true}
-                      offset={0}
+                      offset={-120}
                       duration={500}
                       onClick={() => setToggleMenu(false)}
                     >

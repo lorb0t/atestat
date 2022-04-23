@@ -23,6 +23,7 @@ import img22 from "../../assets/Images/wc_dugulas.jpg";
 import img23 from "../../assets/Images/company_house.png";
 import img24 from "../../assets/Images/company_logo2.png";
 
+import { useEffect } from "react";
 import { MdClose } from "react-icons/md";
 import { useState } from "react";
 import "./PageGallery.scss";
@@ -110,6 +111,13 @@ export const PageGallery = () => {
     setTempImgSrc(imgSrc);
     setModel(true);
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("ran");
+      return window.scrollTo(0, 0);
+    }, 1000);
+  });
 
   const { t, i18n } = useTranslation();
 

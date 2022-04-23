@@ -1,6 +1,6 @@
 import "../LearnMore.scss";
 import { useTranslation } from "react-i18next";
-
+import { useEffect } from "react";
 import img1 from "../../assets/Images/robot.jpg";
 import img2 from "../../assets/Images/robot.jpg";
 import img3 from "../../assets/Images/robot.jpg";
@@ -13,6 +13,13 @@ export const Meres = ({}) => {
     if ("hu" === i18n.language) return true;
     else return false;
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      console.log("ran");
+      return window.scrollTo(0, 0);
+    }, 1000);
+  });
 
   return (
     <div className="dugulas-main">

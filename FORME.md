@@ -4,18 +4,6 @@
 
 - fuss gyorsan kisbeka🤪
 - terms and privacy
-- logo
-
-# FOLLOW LINKS
-
-- lori link
-
-🤣
-
-# GALLERY
-
-- space on top
--
 
 # VIDEO
 
