@@ -48,7 +48,7 @@ export const Navbar = ({ showModal, setShowModal }) => {
                 offset={-118}
                 duration={500}
               >
-                {item.name}
+                <Link1 to="/">{item.name}</Link1>
               </Link>
             ))}
           </div>

@@ -1,9 +1,6 @@
-import i18next, { changeLanguage } from "i18next";
+import i18next from "i18next";
 import "./LanguageModal.scss";
 import { motion, AnimatePresence } from "framer-motion";
-
-import magyar from "./magyar.svg";
-import roman from "./roman.svg";
 
 const backdrop = {
   visible: { opacity: 1 },
@@ -15,7 +12,7 @@ const comeIn = {
   hidden: { opacity: 0, y: "-100vh" },
 };
 
-export const LanguageModal = ({ showModal, setShowModal }) => {
+export const LanguageModal = ({ showModal, setShowModal, magyar, roman }) => {
   const ChangeLanguage = (props) => {
     i18next.changeLanguage(props);
     setShowModal(false);

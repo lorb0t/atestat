@@ -29,6 +29,8 @@ import szenyviz_img2 from "./assets/Images/robot.jpg";
 import szenyviz_img3 from "./assets/Images/company-cars.png";
 import { PageGallery } from "./pages/PageGallery/PageGallery";
 
+import magyar from "./assets/Images_for_web/magyar.svg";
+import roman from "./assets/Images_for_web/roman.svg";
 // ###############Learn More Import#########################
 
 const App = ({}) => {
@@ -41,7 +43,12 @@ const App = ({}) => {
         <div className="gradient__bg">
           <Navbar showModal={showModal} setShowModal={setShowModal} />
         </div>
-        <LanguageModal showModal={showModal} setShowModal={setShowModal} />
+        <LanguageModal
+          showModal={showModal}
+          setShowModal={setShowModal}
+          magyar={magyar}
+          roman={roman}
+        />
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route
