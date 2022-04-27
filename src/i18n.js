@@ -22,8 +22,8 @@ i18n
     supportedLngs: ["ro", "hu"],
     fallbackLng: "ro",
     detection: {
-      order: ["cookie", "htmlTag", "localStorage"],
-      caches: ["cookie"],
+      order: ["htmlTag"],
+      // caches: ["cookie"],
     },
     react: {
       useSuspense: false,
