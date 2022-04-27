@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React from "react";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
@@ -10,21 +10,7 @@ import "./i18n";
 const container = document.getElementById("root");
 const root = createRoot(container);
 
-const loaderStyle = {
-  background: "gray",
-};
-
-const Loader = (
-  <div style={loaderStyle}>
-    <h1 style={{ color: "white" }}>Loading...</h1>
-  </div>
-);
-
-root.render(
-  <Suspense fallback={Loader}>
-    <App />
-  </Suspense>
-);
+root.render(<App />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
