@@ -66,7 +66,7 @@ const App = ({}) => {
                 yt3="https://www.youtube.com/embed/HaX5xOS3K9M"
                 img1={dugulas_img1}
                 img2={dugulas_img2}
-                s1="true"
+                s1={true}
               />
             }
           />
@@ -86,7 +86,7 @@ const App = ({}) => {
                 img1={szenyviz_img1}
                 img2={szenyviz_img2}
                 img3={szenyviz_img3}
-                s1="false"
+                s1={false}
               />
             }
           />
