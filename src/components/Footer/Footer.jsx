@@ -1,7 +1,7 @@
 import { useInView } from "react-intersection-observer";
 
 import "./Footer.scss";
-import logo from "../../assets/Images/company_logo.png";
+import logo from "../../assets/Images_for_web/company_logo.png";
 import "../../assets/Animations/logo_woble.css";
 
 import { Link } from "react-scroll";
@@ -132,7 +132,7 @@ export const Footer = () => {
             </span>
             Created by:{" "}
             <span>
-              <a href="https://github.com/progenor">
+              <a href="https://lorgenor.netlify.app">
                 <span className="inLine">progenor</span>
               </a>
             </span>{" "}

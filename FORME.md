@@ -14,3 +14,7 @@
 # KEywords
 
 - tobb es szedd ki a commentet
+
+# Altalanos
+
+- meg kell jaitani a navbart

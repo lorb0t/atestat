@@ -1,27 +1,47 @@
-import img1 from "../../assets/Images/bemeres.jpg";
-import img2 from "../../assets/Images/robot.jpg";
-import img3 from "../../assets/Images/company-cars.png";
-import img4 from "../../assets/Images/Kamion1.jpeg";
-import img5 from "../../assets/Images/inliner.jpeg";
-import img6 from "../../assets/Images/wc_dugulas.jpg";
-import img7 from "../../assets/Images/company_house.png";
-import img8 from "../../assets/Images/company_logo2.png";
-import img9 from "../../assets/Images/bemeres.jpg";
-import img10 from "../../assets/Images/robot.jpg";
-import img11 from "../../assets/Images/company-cars.png";
-import img12 from "../../assets/Images/Kamion1.jpeg";
-import img13 from "../../assets/Images/inliner.jpeg";
-import img14 from "../../assets/Images/wc_dugulas.jpg";
-import img15 from "../../assets/Images/company_house.png";
-import img16 from "../../assets/Images/company_logo2.png";
-import img17 from "../../assets/Images/bemeres.jpg";
-import img18 from "../../assets/Images/robot.jpg";
-import img19 from "../../assets/Images/company-cars.png";
-import img20 from "../../assets/Images/Kamion1.jpeg";
-import img21 from "../../assets/Images/inliner.jpeg";
-import img22 from "../../assets/Images/wc_dugulas.jpg";
-import img23 from "../../assets/Images/company_house.png";
-import img24 from "../../assets/Images/company_logo2.png";
+import img1 from "../../assets/Images/cleaning.png";
+import img2 from "../../assets/Images/szenyviz_szippantas.png";
+import img3 from "../../assets/Images/Remediere_conducta_fara_sapare_Inliner.jpg";
+import img4 from "../../assets/Images/robot.jpg";
+import img5 from "../../assets/Images/pierdere-apa-1-compressor.jpg";
+
+import img6 from "../../assets/Images/pierdere-apa-2-compressor.jpg";
+import img7 from "../../assets/Images/ultra_sonic.jpg";
+import img8 from "../../assets/Images/Localizare_spartura_pe_conducta_de_apa_DN63.jpg";
+
+import img9 from "../../assets/Images/shortliner1.png";
+import img10 from "../../assets/Images/shortliner_wood_cut.png";
+import img11 from "../../assets/Images/inliner.png";
+
+import img13 from "../../assets/Images/camera2.png";
+import img14 from "../../assets/Images/robot_trip.png";
+
+import img15 from "../../assets/Images/Akna_takaritas_elott.jpg";
+import img17 from "../../assets/Images/Akna_takaritas_utan.jpg";
+
+import img18 from "../../assets/Images/Kamion_munka.jpg";
+import img19 from "../../assets/Images/Kamion_1.jpg";
+import img20 from "../../assets/Images/Kamion_ejjszakai_munka.jpg";
+
+import img21 from "../../assets/Images/Acel_vizcso_toldas_PE.jpg";
+import img22 from "../../assets/Images/company-cars.png";
+import img23 from "../../assets/Images/Exemplu_montaj_conducta_de_scurgere_DN110_necorespunzatoare_.jpg";
+import img24 from "../../assets/Images/foto1.jpg";
+import img25 from "../../assets/Images/kamion_es_ford.jpg";
+import img26 from "../../assets/Images/Iszap_kiurites_Kamion.jpg";
+import img27 from "../../assets/Images/Kamion_es_videos_auto.jpg";
+import img28 from "../../assets/Images/kamion_repuloter.jpg";
+import img29 from "../../assets/Images/Pipe_cutter.jpg";
+import img30 from "../../assets/Images/Segment_de_conducta_de_apa_DN63_remediata.jpg";
+import img31 from "../../assets/Images/Spartura_conducta_de_apa_DN63.jpg";
+import img32 from "../../assets/Images/Spartura_conducta_de_apa_dupa_localizare_si_sapare_DN63.jpg";
+import img33 from "../../assets/Images/Spartura_de_apa_localizata_2.jpg";
+import img34 from "../../assets/Images/Spartura_de_apa_remediata_prin_electrofuziune.jpg";
+import img35 from "../../assets/Images/vizcso_lerakodas.jpg";
+import img36 from "../../assets/Images/Vizcso_folyas1.jpg";
+import img37 from "../../assets/Images/video_panel.png";
+import img38 from "../../assets/Images/cars_above.png";
+
+import corner from "../../assets/Images_for_web/pngkit_cobweb-png_954802.png";
 
 import { useEffect } from "react";
 import { MdClose } from "react-icons/md";
@@ -31,6 +51,45 @@ import { useTranslation } from "react-i18next";
 
 export const PageGallery = () => {
   let pictures = [
+    {
+      imgSrc: img34,
+    },
+    {
+      imgSrc: img35,
+    },
+    {
+      imgSrc: img36,
+    },
+    {
+      imgSrc: img37,
+    },
+    {
+      imgSrc: img38,
+    },
+    {
+      imgSrc: img23,
+    },
+    {
+      imgSrc: img24,
+    },
+    {
+      imgSrc: img25,
+    },
+    {
+      imgSrc: img26,
+    },
+    {
+      imgSrc: img27,
+    },
+    {
+      imgSrc: img28,
+    },
+    {
+      imgSrc: img29,
+    },
+    {
+      imgSrc: img30,
+    },
     {
       imgSrc: img1,
     },
@@ -44,7 +103,6 @@ export const PageGallery = () => {
       imgSrc: img4,
     },
     {
-      id: 5,
       imgSrc: img5,
     },
     {
@@ -62,10 +120,13 @@ export const PageGallery = () => {
     {
       imgSrc: img10,
     },
-
     {
-      imgSrc: img12,
+      imgSrc: img11,
     },
+
+    // {
+    //   imgSrc: img12,
+    // },
     {
       imgSrc: img13,
     },
@@ -75,9 +136,9 @@ export const PageGallery = () => {
     {
       imgSrc: img15,
     },
-    {
-      imgSrc: img16,
-    },
+    // {
+    //   imgSrc: img16,
+    // },
     {
       imgSrc: img17,
     },
@@ -96,11 +157,15 @@ export const PageGallery = () => {
     {
       imgSrc: img22,
     },
+
     {
-      imgSrc: img23,
+      imgSrc: img31,
     },
     {
-      imgSrc: img24,
+      imgSrc: img32,
+    },
+    {
+      imgSrc: img33,
     },
   ];
 
@@ -117,7 +182,7 @@ export const PageGallery = () => {
       console.log("ran");
       return window.scrollTo(0, 0);
     }, 1000);
-  });
+  }, []);
 
   const { t, i18n } = useTranslation();
 

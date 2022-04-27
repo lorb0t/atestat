@@ -20,13 +20,14 @@ import { LanguageModal } from "./components/Modal/LanguageModal";
 // ###############Learn More Import#########################
 import { useTranslation } from "react-i18next";
 
-import dugulas_img1 from "./assets/Images/cleaning.png";
-import dugulas_img2 from "./assets/Images/company_house.png";
-import dugulas_img3 from "./assets/Images/inliner.jpeg";
+import dugulas_img1 from "./assets/Images/Akna_takaritas_elott.jpg";
+import dugulas_img3 from "./assets/Images_for_web/before-after-icon_white.png";
+import dugulas_img2 from "./assets/Images/Akna_takaritas_utan.jpg";
 
-import szenyviz_img1 from "./assets/Images/cleaning.png";
-import szenyviz_img2 from "./assets/Images/robot.jpg";
-import szenyviz_img3 from "./assets/Images/company-cars.png";
+import szenyviz_img1 from "./assets/Images/Kamion_munka.jpg";
+import szenyviz_img2 from "./assets/Images/Kamion_1.jpg";
+import szenyviz_img3 from "./assets/Images/Kamion_ejjszakai_munka.jpg";
+
 import { PageGallery } from "./pages/PageGallery/PageGallery";
 
 import magyar from "./assets/Images_for_web/magyar.svg";

@@ -33,7 +33,7 @@ export const LearnMore = ({
       <div className="dugulas-text">
         <div className="dugulas-imgs">
           <img src={img1} alt="" />
-          <img src={img3} alt="" className="dugulas-img2" />
+          <img src={img3} alt="" className="dugulas-img2 img_bigger" />
           <img src={img2} alt="" />
         </div>
         <div className="text-text">

@@ -1,9 +1,9 @@
 import "../LearnMore.scss";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import img1 from "../../assets/Images/robot.jpg";
-import img2 from "../../assets/Images/robot.jpg";
-import img3 from "../../assets/Images/robot.jpg";
+import img3 from "../../assets/Images/video_panel.png";
+import img2 from "../../assets/Images/camera2.png";
+import img1 from "../../assets/Images/robot_trip.png";
 
 export const Camera = ({}) => {
   const { t, i18n } = useTranslation();

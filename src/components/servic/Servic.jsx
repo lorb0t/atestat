@@ -6,12 +6,11 @@ import { Link } from "react-router-dom";
 
 import { useTranslation } from "react-i18next";
 
-import image from "../../assets/Images/company_house.png";
-import cleaning from "../../assets/Images/cleaning.png";
-import szippantas from "../../assets/Images/Kamion1.jpeg";
-import inliner from "../../assets/Images/inliner.jpeg";
-import robot from "../../assets/Images/robot.jpg";
-import bemeres from "../../assets/Images/bemeres.jpg";
+import img1 from "../../assets/Images/cleaning.png";
+import img2 from "../../assets/Images/szenyviz_szippantas.png";
+import img3 from "../../assets/Images/Remediere_conducta_fara_sapare_Inliner.jpg";
+import img4 from "../../assets/Images/robot.jpg";
+import img5 from "../../assets/Images/pierdere-apa-1-compressor.jpg";
 import corner1line from "../../assets/Images_for_web/corner1line.svg";
 
 export const Servic = () => {
@@ -61,7 +60,7 @@ export const Servic = () => {
                   </button>
                 </div>
                 <div className="img-container first-pic">
-                  <img src={cleaning} alt="picture" className="servic-img" />
+                  <img src={img1} alt="picture" className="servic-img" />
                 </div>
               </div>
               <div className="horizontal-line"></div>
@@ -79,7 +78,7 @@ export const Servic = () => {
                   </button>
                 </div>
                 <div className="img-container">
-                  <img src={szippantas} alt="picture" className="servic-img" />
+                  <img src={img2} alt="picture" className="servic-img" />
                 </div>
               </div>
               <div className="horizontal-line"></div>
@@ -97,7 +96,7 @@ export const Servic = () => {
                   </button>
                 </div>
                 <div className="img-container">
-                  <img src={inliner} alt="picture" className="servic-img" />
+                  <img src={img3} alt="picture" className="servic-img" />
                 </div>
               </div>
               <div className="horizontal-line"></div>
@@ -115,7 +114,7 @@ export const Servic = () => {
                   </button>
                 </div>
                 <div className="img-container">
-                  <img src={robot} alt="picture" className="servic-img" />
+                  <img src={img4} alt="picture" className="servic-img" />
                 </div>
               </div>
               <div className="horizontal-line"></div>
@@ -134,7 +133,7 @@ export const Servic = () => {
                 </div>
 
                 <div className="img-container">
-                  <img src={bemeres} alt="picture" className="servic-img" />
+                  <img src={img5} alt="picture" className="servic-img" />
                 </div>
               </div>
             </div>
@@ -165,7 +164,7 @@ export const Servic = () => {
                   }}
                   transition={{ duration: 1.5 }}
                 >
-                  <img src={cleaning} alt="picture" className="servic-img" />
+                  <img src={img1} alt="picture" className="servic-img" />
                 </motion.div>
               </div>
               <div className="2container container-right container" id="cont2">
@@ -178,7 +177,7 @@ export const Servic = () => {
                   }}
                   transition={{ duration: 1.5 }}
                 >
-                  <img src={szippantas} alt="picture" className="servic-img" />
+                  <img src={img2} alt="picture" className="servic-img" />
                 </motion.div>
                 <div className="text-container" ref={cont2.ref}>
                   <h3>{t("szenyviz_cim")}</h3>
@@ -215,7 +214,7 @@ export const Servic = () => {
                   }}
                   transition={{ duration: 1.5 }}
                 >
-                  <img src={inliner} alt="picture" className="servic-img" />
+                  <img src={img3} alt="picture" className="servic-img" />
                 </motion.div>
               </div>
               <div className="4container container-right container" id="cont4">
@@ -228,7 +227,7 @@ export const Servic = () => {
                   }}
                   transition={{ duration: 1.5 }}
                 >
-                  <img src={robot} alt="picture" className="servic-img" />
+                  <img src={img4} alt="picture" className="servic-img" />
                 </motion.div>
                 <div className="text-container" ref={cont4.ref}>
                   <h3>{t("camera_cim")}</h3>
@@ -266,7 +265,7 @@ export const Servic = () => {
                   }}
                   transition={{ duration: 1.5 }}
                 >
-                  <img src={bemeres} alt="picture" className="servic-img" />
+                  <img src={img5} alt="picture" className="servic-img" />
                 </motion.div>
               </div>
             </div>

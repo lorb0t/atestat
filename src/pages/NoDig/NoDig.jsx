@@ -1,9 +1,9 @@
 import "../LearnMore.scss";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import img1 from "../../assets/Images/robot.jpg";
-import img2 from "../../assets/Images/robot.jpg";
-import img3 from "../../assets/Images/robot.jpg";
+import img3 from "../../assets/Images/shortliner1.png";
+import img1 from "../../assets/Images/shortliner_wood_cut.png";
+import img2 from "../../assets/Images/inliner.png";
 
 export const NoDig = ({}) => {
   const { t, i18n } = useTranslation();

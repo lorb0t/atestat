@@ -1,9 +1,9 @@
 import "../LearnMore.scss";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
-import img1 from "../../assets/Images/robot.jpg";
-import img2 from "../../assets/Images/robot.jpg";
-import img3 from "../../assets/Images/robot.jpg";
+import img1 from "../../assets/Images/pierdere-apa-2-compressor.jpg";
+import img3 from "../../assets/Images/ultra_sonic.jpg";
+import img2 from "../../assets/Images/Localizare_spartura_pe_conducta_de_apa_DN63.jpg";
 
 export const Meres = ({}) => {
   const { t, i18n } = useTranslation();

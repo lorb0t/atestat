@@ -4,12 +4,32 @@ import "../../assets/Animations/nicebutton.scss";
 import { Link } from "react-router-dom";
 // import { useEffect } from "react";
 
-import img1 from "../../assets/Images/wc_dugulas.jpg";
-import img2 from "../../assets/Images/Kamion1.jpeg";
-import img3 from "../../assets/Images/inliner.jpeg";
-import img4 from "../../assets/Images/robot.jpg";
-import img5 from "../../assets/Images/cctv-pipe.png";
-import img6 from "../../assets/Images/bemeres.jpg";
+import img1 from "../../assets/Images/cars_above.png";
+import img2 from "../../assets/Images/Kamion_ejjszakai_munka.jpg";
+import img3 from "../../assets/Images/Iszap_kiurites_Kamion.jpg";
+import img4 from "../../assets/Images/foto1.jpg";
+import img5 from "../../assets/Images/kamion_repuloter.jpg";
+import img6 from "../../assets/Images/robot_trip.png";
+// import img7 from "../../assets/Images/IMG_7549.jpg";
+// import img8 from "../../assets/Images/Localizare_spartura_pe_conducta_de_apa_DN63.jpg";
+
+// import img9 from "../../assets/Images/shortliner1.png";
+// import img10 from "../../assets/Images/shortliner_wood_cut.png";
+// import img11 from "../../assets/Images/inliner.png";
+
+// import img12 from "../../assets/Images/camera1.png";
+// import img13 from "../../assets/Images/camera2.png";
+// import img14 from "../../assets/Images/IMG_7549.jpg";
+
+// import img15 from "../../assets/Images/Akna_takaritas_elott.jpg";
+// import img16 from "../../assets/Images/IMG_7549.jpg";
+// import img17 from "../../assets/Images/Akna_takaritas_utan.jpg";
+
+// import img18 from "../../assets/Images/Kamion_munka.jpg";
+// import img19 from "../../assets/Images/Kamion_1.jpg";
+// import img20 from "../../assets/Images/Kamion_ejjszakai_munka.jpg";
+
+// import img6 from "../../assets/Images";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -20,7 +40,7 @@ import { useTranslation } from "react-i18next";
 export const Gallery = () => {
   const { t, i18n } = useTranslation();
 
-  const inter = 2500;
+  const inter = 4000;
 
   return (
     <div className="gallery_main">
@@ -44,9 +64,6 @@ export const Gallery = () => {
           </Carousel.Item>
           <Carousel.Item interval={inter}>
             <img className="d-block " src={img6} alt="Third slide" />
-          </Carousel.Item>
-          <Carousel.Item interval={inter}>
-            <img className="d-block " src={img3} alt="Third slide" />
           </Carousel.Item>
         </Carousel>
       </div>
