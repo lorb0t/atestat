@@ -1,8 +1,3 @@
-# FOOTER
-
-- fuss gyorsan kisbeka🤪
-- terms and privacy
-
 # VIDEO
 
 - youtube link bereakas

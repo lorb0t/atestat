@@ -21,12 +21,12 @@ export const About = () => {
         </div>
         <div className="about-follow">
           <div className="youtube">
-            <a href="#">
+            <a href="https://www.youtube.com/channel/UC7KuMghyQNg_DxCmq57Pw5A/featured">
               <FontAwesomeIcon icon={faYoutube} className="to-you" />
             </a>
           </div>
           <div className="facebook">
-            <a href="#">
+            <a href="https://www.facebook.com/CleanSpeedSRL">
               <FontAwesomeIcon icon={faFacebook} className="to-face" />
             </a>
           </div>

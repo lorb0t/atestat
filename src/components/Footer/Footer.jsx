@@ -23,7 +23,7 @@ export const Footer = () => {
           <div className="footer-heading-name">
             <h1> S.C. CLEAN SPEED S.R.L.</h1>
             <br />
-            <h3>Fuss gyorsan kisbeka!</h3>
+            <h3>{t("mottocska")}</h3>
           </div>
           <div className="vertical_line"></div>
           <div className="footer-heading-explore">
@@ -87,7 +87,10 @@ export const Footer = () => {
             <ul>
               <li style={{ color: "white" }}>Follow</li>
               <li>
-                <a href="#facebook" className="usable_links">
+                <a
+                  href="https://www.facebook.com/CleanSpeedSRL"
+                  className="usable_links"
+                >
                   Facebook
                 </a>
               </li>
@@ -97,7 +100,10 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="#youtube" className="usable_links">
+                <a
+                  href="https://www.youtube.com/channel/UC7KuMghyQNg_DxCmq57Pw5A/featured"
+                  className="usable_links"
+                >
                   Youtube
                 </a>
               </li>

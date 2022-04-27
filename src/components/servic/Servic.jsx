@@ -10,7 +10,7 @@ import img1 from "../../assets/Images/cleaning.png";
 import img2 from "../../assets/Images/szenyviz_szippantas.png";
 import img3 from "../../assets/Images/Remediere_conducta_fara_sapare_Inliner.jpg";
 import img4 from "../../assets/Images/robot.jpg";
-import img5 from "../../assets/Images/pierdere-apa-1-compressor.jpg";
+import img5 from "../../assets/Images/emberker_with_ultrasonic.jpg";
 import corner1line from "../../assets/Images_for_web/corner1line.svg";
 
 export const Servic = () => {
