@@ -2,6 +2,11 @@ import "../LearnMore.scss";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
 
+import img3_magyar from "../../assets/Images_for_web/before-after-icon_white_magyar.png";
+import img3_magyar_fuggoleges from "../../assets/Images_for_web/before-after-icon_white_magyar_fuggoleges.png";
+import img3_roman from "../../assets/Images_for_web/before-after-icon_white_roman.png";
+import img3_roman_fuggoleges from "../../assets/Images_for_web/before-after-icon_white_roman_fuggoleges.png";
+
 export const LearnMore = ({
   title,
   p1,
@@ -15,7 +20,7 @@ export const LearnMore = ({
   img1,
   img2,
   img3,
-  s3,
+  s1,
   s4,
   s5,
 }) => {
@@ -28,12 +33,69 @@ export const LearnMore = ({
     }, 1000);
   });
 
+  const isRomanian = () => {
+    if ("ro" === i18n.language) return true;
+    else return false;
+  };
+
+  const isMobile = window.innerWidth < 1090;
+
   return (
     <div className="dugulas-main">
       <div className="dugulas-text">
         <div className="dugulas-imgs">
           <img src={img1} alt="" />
-          <img src={img3} alt="" className="dugulas-img2 img_bigger" />
+
+          {s1 ? (
+            <>
+              {isMobile ? (
+                <>
+                  {isRomanian() ? (
+                    <>
+                      <img
+                        src={img3_roman_fuggoleges}
+                        alt=""
+                        className="dugulas-img2 img_bigger"
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <img
+                        src={img3_magyar_fuggoleges}
+                        alt=""
+                        className="dugulas-img2 img_bigger"
+                      />
+                    </>
+                  )}
+                </>
+              ) : (
+                <>
+                  {isRomanian() ? (
+                    <>
+                      <img
+                        src={img3_roman}
+                        alt=""
+                        className="dugulas-img2 img_bigger"
+                      />
+                    </>
+                  ) : (
+                    <>
+                      <img
+                        src={img3_magyar}
+                        alt=""
+                        className="dugulas-img2 img_bigger"
+                      />
+                    </>
+                  )}
+                </>
+              )}
+            </>
+          ) : (
+            <>
+              <img src={img3} alt="" className="dugulas-img2 img_bigger" />
+            </>
+          )}
+
           <img src={img2} alt="" />
         </div>
         <div className="text-text">

@@ -21,7 +21,6 @@ import { LanguageModal } from "./components/Modal/LanguageModal";
 import { useTranslation } from "react-i18next";
 
 import dugulas_img1 from "./assets/Images/Akna_takaritas_elott.jpg";
-import dugulas_img3 from "./assets/Images_for_web/before-after-icon_white.png";
 import dugulas_img2 from "./assets/Images/Akna_takaritas_utan.jpg";
 
 import szenyviz_img1 from "./assets/Images/Kamion_munka.jpg";
@@ -67,7 +66,7 @@ const App = ({}) => {
                 yt3="https://www.youtube.com/embed/HaX5xOS3K9M"
                 img1={dugulas_img1}
                 img2={dugulas_img2}
-                img3={dugulas_img3}
+                s1="true"
               />
             }
           />
@@ -87,6 +86,7 @@ const App = ({}) => {
                 img1={szenyviz_img1}
                 img2={szenyviz_img2}
                 img3={szenyviz_img3}
+                s1="false"
               />
             }
           />
