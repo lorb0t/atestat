@@ -144,7 +144,10 @@ export const Footer = () => {
             </span>{" "}
             &{" "}
             <span>
-              <a href="mailto:kulcsarlory@gmail.com" className="usable_links">
+              <a
+                href="https://www.instagram.com/lorb0t/"
+                className="usable_links"
+              >
                 <span>lorbot</span>
               </a>
             </span>
