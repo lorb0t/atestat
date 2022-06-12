@@ -176,18 +176,18 @@
   }
 
   .navbar-links_logo h1 {
-    font-size: 30px;
+    font-size: 29px;
   }
 }
 
 @media screen and (max-width: 550px) {
   .navbar {
-    padding: 2rem;
+    padding: 1.9rem;
   }
 }
 @media screen and (max-width: 360px) {
   .navbar-links_logo h1 {
-    font-size: 26px;
-    line-height: 2rem;
+    font-size: 25px;
+    line-height: 1.9rem;
   }
 }
