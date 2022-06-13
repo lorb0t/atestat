@@ -60,8 +60,8 @@ export const Contact = () => {
                   className="servic-icon"
                 />
               </div>
-              <a href="tel:+40744.395.333" className="usable_links">
-                +40744.395.333
+              <a href="tel:+40751.090.151" className="usable_links">
+                +40751.090.151
               </a>
             </div>
             <div className="fax el">

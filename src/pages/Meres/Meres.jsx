@@ -81,6 +81,7 @@ export const Meres = ({}) => {
                 <li>{t("meres11_2")}</li>
                 <li>{t("meres11_3")}</li>
                 <li>{t("meres11_4")}</li>
+                <li>{t("meres11_5")}</li>
               </ul>
             </>
           )}
