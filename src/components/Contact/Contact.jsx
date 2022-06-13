@@ -22,11 +22,11 @@ export const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_tlnwtvy", //service Id
-        "template_aasgko2",
+        "service_1g0dmi2", //service Id
+        "template_1oultbm",
         // form.current,
         form.current,
-        "DlFgtAwRZeNciL-NZ"
+        "VoA0qkSw7QZn4vVDR"
       )
       .then(
         (result) => {

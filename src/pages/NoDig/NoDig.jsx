@@ -96,21 +96,74 @@ export const NoDig = ({}) => {
 
           <div className="dugulas-youtube">
             <iframe
-              src=""
+              title="cim"
+              src="https://www.youtube.com/embed/PMw8Kog80Y0"
               width={vid_size}
               height={vid_size}
               allow="fullscreen;"
             ></iframe>
             <div className="dugulas-vertical-line"></div>
             <iframe
-              src=""
+              title="cim"
+              src="https://www.youtube.com/embed/Tqi_FdP9INc"
               width={vid_size}
               height={vid_size}
               allow="fullscreen;"
             ></iframe>
             <div className="dugulas-vertical-line"></div>
             <iframe
-              src=""
+              title="cim"
+              src="https://www.youtube.com/embed/mzy92Drfz0Q"
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+          </div>
+          <div className="dugulas-youtube">
+            <iframe
+              title="cim"
+              src="https://www.youtube.com/embed/1JJekIKyieA"
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+            <div className="dugulas-vertical-line"></div>
+            <iframe
+              title="cim"
+              src="https://www.youtube.com/embed/qVfS4WssxsM"
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+            <div className="dugulas-vertical-line"></div>
+            <iframe
+              title="cim"
+              src="https://www.youtube.com/embed/nVuDjaKBzqE"
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+          </div>
+          <div className="dugulas-youtube">
+            <iframe
+              title="cim"
+              src="https://www.youtube.com/embed/zX6HdbdO9gg"
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+            <div className="dugulas-vertical-line"></div>
+            <iframe
+              title="cim"
+              src="https://www.youtube.com/embed/WfsHn84br_8"
+              width={vid_size}
+              height={vid_size}
+              allow="fullscreen;"
+            ></iframe>
+            <div className="dugulas-vertical-line"></div>
+            <iframe
+              title="cim"
+              src="https://www.youtube.com/embed/PocnusBtmjI"
               width={vid_size}
               height={vid_size}
               allow="fullscreen;"

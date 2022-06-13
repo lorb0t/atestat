@@ -88,21 +88,21 @@ export const Meres = ({}) => {
 
           <div className="dugulas-youtube">
             <iframe
-              src=""
+              src="https://www.youtube.com/embed/rtRPIdgg6-U"
               width={vid_size}
               height={vid_size}
               allow="fullscreen;"
             ></iframe>
             <div className="dugulas-vertical-line"></div>
             <iframe
-              src=""
+              src="https://www.youtube.com/embed/CwEYm5z8Hm4"
               width={vid_size}
               height={vid_size}
               allow="fullscreen;"
             ></iframe>
             <div className="dugulas-vertical-line"></div>
             <iframe
-              src=""
+              src="https://www.youtube.com/embed/2YZvpn5u6cc"
               width={vid_size}
               height={vid_size}
               allow="fullscreen;"

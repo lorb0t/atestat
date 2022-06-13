@@ -84,10 +84,7 @@ export const Video = () => {
         <span>
           {t("youtube_link")}
           {":"}
-          <a
-            href="https://www.youtube.com/channel/UC7KuMghyQNg_DxCmq57Pw5A/featured"
-            target="_blank"
-          >
+          <a href="https://www.youtube.com/watch?v=3pQrGHSt3RU" target="_blank">
             <span>
               <BsYoutube />
             </span>

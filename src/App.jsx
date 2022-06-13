@@ -61,9 +61,9 @@ const App = ({}) => {
                 p3={t("dugulas3")}
                 p4={t("dugulas4")}
                 p5={t("dugulas5")}
-                yt1="https://www.youtube.com/embed/HaX5xOS3K9M"
-                yt2="https://www.youtube.com/embed/HaX5xOS3K9M"
-                yt3="https://www.youtube.com/embed/HaX5xOS3K9M"
+                yt1=""
+                yt2="https://www.youtube.com/embed/p0dY7vhszLc"
+                yt3=""
                 img1={dugulas_img1}
                 img2={dugulas_img2}
                 s1={true}
@@ -81,7 +81,7 @@ const App = ({}) => {
                 p4={t("szenyviz4")}
                 p5={t("szenyviz5")}
                 yt1=""
-                yt2=""
+                yt2="https://www.youtube.com/embed/FKL5F2ZysCI"
                 yt3=""
                 img1={szenyviz_img1}
                 img2={szenyviz_img2}

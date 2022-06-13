@@ -51,29 +51,6 @@ export const Camera = ({}) => {
               </>
             )}
           </ul>
-
-          <div className="dugulas-youtube">
-            <iframe
-              src=""
-              width={vid_size}
-              height={vid_size}
-              allow="fullscreen;"
-            ></iframe>
-            <div className="dugulas-vertical-line"></div>
-            <iframe
-              src=""
-              width={vid_size}
-              height={vid_size}
-              allow="fullscreen;"
-            ></iframe>
-            <div className="dugulas-vertical-line"></div>
-            <iframe
-              src=""
-              width={vid_size}
-              height={vid_size}
-              allow="fullscreen;"
-            ></iframe>
-          </div>
         </div>
       </div>
     </div>
