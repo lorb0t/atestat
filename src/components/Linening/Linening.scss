@@ -1,0 +1,55 @@
+.line_main_bg {
+  background-image: url(../../assets/Images_for_web/SpotLight.png);
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 10px solid rgba(4, 2, 37, 0.688);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.line_content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .line_new {
+    background-color: red;
+    height: min-content;
+    width: min-content;
+    padding: 0.6rem 1.5rem 0.8rem 1.5rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0.2em 0.5em 1em rgba(0, 0, 0, 0.759);
+    border: 1px solid rgba(0, 0, 0, 0.282);
+    h1 {
+      font-size: 2rem;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+
+  .line_content_img {
+    // display: flex;
+    // justify-content: center;
+    // align-items: flex-end;
+
+    width: -moz-fit-content;
+    width: fit-content;
+    img {
+      width: clamp(15rem, 20vw, 20rem);
+    }
+  }
+  .line_content_right {
+  }
+}
+
+.change_op {
+  opacity: 1;
+  transition: 3s;
+}
+
+.normal_op {
+  opacity: 0;
+  transition: 1s;
+}

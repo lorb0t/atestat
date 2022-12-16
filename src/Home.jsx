@@ -4,6 +4,7 @@ import { About } from "./components/About/About";
 import { Video } from "./components/Video/Video";
 import { Gallery } from "./components/Gallery/Gallery";
 import { Contact } from "./components/Contact/Contact";
+import Lineing from "./components/Linening/Lineing";
 
 export const Home = () => {
   return (
@@ -14,6 +15,10 @@ export const Home = () => {
 
       <div className="about_stuff" id="about">
         <About />
+      </div>
+
+      <div id="linening">
+        <Lineing />
       </div>
 
       <div className="servic" id="szolgaltatasok">
