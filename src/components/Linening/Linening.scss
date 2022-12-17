@@ -7,11 +7,10 @@
   );
   height: 80vh;
   width: 100%;
-  border: 10px solid rgba(4, 2, 37, 0.688);
+  border: 10px solid rgba(3, 2, 18, 0.938);
 
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .line_content {
@@ -94,6 +93,7 @@
   }
   h2 {
     font-size: clamp(0.3rem, 5vw, 1.5rem);
+    padding-bottom: 2rem;
   }
 }
 
@@ -111,7 +111,7 @@
 
   font-family: "Source Sans Pro", sans-serif;
   animation: reveal 1s ease-in-out forwards 1000ms,
-    glow 5000ms linear infinite 1000ms;
+    gloww 5000ms linear infinite 1000ms;
 }
 
 .linening_show {
@@ -126,7 +126,7 @@
     background-size: 200% 200%;
   }
 }
-@keyframes glow {
+@keyframes gloww {
   30% {
     text-shadow: 0 0 3px rgb(78, 106, 249);
   }
@@ -136,7 +136,7 @@
 
 $bg: #f3f8fa;
 $white: #fff;
-$black: #282936;
+$black: rgb(78, 106, 249);
 
 @mixin transition(
   $property: all,
