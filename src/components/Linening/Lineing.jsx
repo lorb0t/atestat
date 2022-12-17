@@ -30,7 +30,8 @@ const Lineing = () => {
             <span className="icon arrow"></span>
           </span>
           <span className="button-text">
-            <Link to="/dugulas/">{t("learnMoreButton")}</Link>
+            {/* <Link to="/dugulas/">{t("learnMoreButton")}</Link> */}
+            <Link to="">In curand...</Link>
           </span>
         </button>
       </div>
