@@ -1,12 +1,17 @@
 .line_main_bg {
-  background-image: url(../../assets/Images_for_web/SpotLight.png);
+  background: rgb(0, 212, 255);
+  background: radial-gradient(
+    circle,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(2, 0, 36, 1) 32%
+  );
   height: 80vh;
-  background-repeat: no-repeat;
-  background-size: cover;
+  width: 100%;
   border: 10px solid rgba(4, 2, 37, 0.688);
 
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .line_content {
@@ -17,12 +22,12 @@
     background-color: red;
     height: min-content;
     width: min-content;
-    padding: 0.6rem 1.5rem 0.8rem 1.5rem;
-    border-radius: 0 0 20px 20px;
+    padding: 0.5rem 2.5rem 0.5rem 2.5rem;
+    border-radius: 0 0 50px 50px;
     box-shadow: 0.2em 0.5em 1em rgba(0, 0, 0, 0.759);
     border: 1px solid rgba(0, 0, 0, 0.282);
     h1 {
-      font-size: 2rem;
+      font-size: clamp(0.3rem, 5vw, 2rem);
       color: white;
       font-weight: 700;
       text-transform: uppercase;
@@ -30,26 +35,213 @@
   }
 
   .line_content_img {
-    // display: flex;
-    // justify-content: center;
-    // align-items: flex-end;
-
     width: -moz-fit-content;
     width: fit-content;
     img {
-      width: clamp(15rem, 20vw, 20rem);
+      width: clamp(150px, 20vw, 300px);
     }
-  }
-  .line_content_right {
   }
 }
 
 .change_op {
   opacity: 1;
-  transition: 3s;
+  transition: 6s;
 }
 
 .normal_op {
   opacity: 0;
   transition: 1s;
+}
+
+.line_content_right,
+.line_content_right_images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .line_pipe_img {
+    border-radius: 15%;
+    border: 5px solid rgba(5, 2, 82, 0.562);
+    box-shadow: 0.2em 0.5em 1em rgba(0, 0, 0, 0.759);
+    width: clamp(150px, 20vw, 400px);
+  }
+  h1 {
+    font-size: clamp(0.3rem, 5vw, 2rem);
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .line_click_finger {
+    position: absolute;
+    bottom: -38px;
+    left: -5px;
+    transform: rotate(45deg);
+    width: 50px;
+  }
+}
+
+.line_content_left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1,
+  h2 {
+    color: rgb(234, 234, 234);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: clamp(0.3rem, 5vw, 1.5rem);
+  }
+}
+
+.linening_show_span {
+  cursor: pointer;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 3rem;
+  background: 50% 100%/ 70% 70% no-repeat radial-gradient(ellipse at bottom, rgb(13, 0, 157), transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 60px;
+  border-color: rgba(0, 0, 0, 0);
+
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 1s ease-in-out forwards 1000ms,
+    glow 5000ms linear infinite 1000ms;
+}
+
+.linening_show {
+  border-color: rgba(0, 0, 0, 0);
+}
+
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 200% 200%;
+  }
+}
+@keyframes glow {
+  30% {
+    text-shadow: 0 0 3px rgb(78, 106, 249);
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
+
+$bg: #f3f8fa;
+$white: #fff;
+$black: #282936;
+
+@mixin transition(
+  $property: all,
+  $duration: 0.45s,
+  $ease: cubic-bezier(0.65, 0, 0.076, 1)
+) {
+  transition: $property $duration $ease;
+}
+
+.line_content_left button {
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    width: 12rem;
+    height: auto;
+    .circle {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: relative;
+      display: block;
+      margin: 0;
+      width: 3rem;
+      height: 3rem;
+      background: $black;
+      border-radius: 1.625rem;
+      @media (max-width: 810px) {
+        width: 100%;
+      }
+      .icon {
+        @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: $white;
+        &.arrow {
+          @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+          left: 0.625rem;
+          width: 1.125rem;
+          height: 0.125rem;
+          background: none;
+          // @media (max-width: 810px) {
+          //   background: $white;
+          // }
+          &::before {
+            position: absolute;
+            content: "";
+            top: -0.25rem;
+            right: 0.0625rem;
+            width: 0.625rem;
+            height: 0.625rem;
+            border-top: 0.125rem solid #fff;
+            border-right: 0.125rem solid #fff;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+    .button-text {
+      @include transition(all, 0.45s, cubic-bezier(0.65, 0, 0.076, 1));
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0.75rem 0;
+      margin: 0 0 0 1.85rem;
+      color: $black;
+      font-weight: 700;
+      line-height: 1.6;
+      text-align: center;
+      text-transform: uppercase;
+
+      a {
+        text-decoration: none;
+        color: $black;
+        @media (max-width: 810px) {
+          color: $white;
+        }
+      }
+    }
+  }
+  &:hover {
+    .circle {
+      width: 100%;
+      .icon {
+        &.arrow {
+          background: $white;
+          transform: translate(1rem, 0);
+        }
+      }
+    }
+    .button-text {
+      a {
+        color: $white;
+      }
+    }
+  }
 }
