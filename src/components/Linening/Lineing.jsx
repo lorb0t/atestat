@@ -21,36 +21,64 @@ const Lineing = () => {
   return (
     <div className="line_main_bg" ref={ref}>
       <div className="line_content_left linening_show">
+        {window.screen.width < 1250 ? (
+          <motion.div
+            initial={{ y: -52 }}
+            animate={{
+              y: `${inView ? -40 : -50}`,
+            }}
+            transition={{ duration: 3 }}
+          >
+            <div
+              className={`line_new footer-heading-img ${
+                inView ? "wobble-hor-bottom" : ""
+              }`}
+            >
+              {/* <h1>{t("Lineing.new")}</h1> */}
+              <h1>{t("new")}</h1>
+            </div>
+          </motion.div>
+        ) : (
+          ""
+        )}
         <h1>
           {t("incepund")} <span className="linening_show_span">2023</span>
         </h1>
         <h2>{t("remediere")}</h2>
-        <button className="learn-more">
-          <span className="circle" aria-hidden="true">
-            <span className="icon arrow"></span>
-          </span>
-          <span className="button-text">
-            <Link to="">{t("soon")}</Link>
-          </span>
-        </button>
+        {window.screen.width > 1250 ? (
+          <button className="learn-more">
+            <span className="circle" aria-hidden="true">
+              <span className="icon arrow"></span>
+            </span>
+            <span className="button-text">
+              <Link to="">{t("soon")}</Link>
+            </span>
+          </button>
+        ) : (
+          ""
+        )}
       </div>
       <div className="line_content">
-        <motion.div
-          initial={{ y: -52 }}
-          animate={{
-            y: `${inView ? -40 : -50}`,
-          }}
-          transition={{ duration: 3 }}
-        >
-          <div
-            className={`line_new footer-heading-img ${
-              inView ? "wobble-hor-bottom" : ""
-            }`}
+        {window.screen.width > 1250 ? (
+          <motion.div
+            initial={{ y: -52 }}
+            animate={{
+              y: `${inView ? -40 : -50}`,
+            }}
+            transition={{ duration: 3 }}
           >
-            {/* <h1>{t("Lineing.new")}</h1> */}
-            <h1>{t("new")}</h1>
-          </div>
-        </motion.div>
+            <div
+              className={`line_new footer-heading-img ${
+                inView ? "wobble-hor-bottom" : ""
+              }`}
+            >
+              {/* <h1>{t("Lineing.new")}</h1> */}
+              <h1>{t("new")}</h1>
+            </div>
+          </motion.div>
+        ) : (
+          ""
+        )}
 
         <div
           className={`line_content_img ${inView ? "change_op" : "normal_op"}`}

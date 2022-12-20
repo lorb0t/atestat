@@ -179,3 +179,28 @@
   height: 110px;
   z-index: 1;
 }
+
+@media screen and (max-width: 1000px) {
+  .newSticker {
+    top: 0;
+    right: 20px;
+  }
+}
+@media screen and (max-width: 630px) {
+  .newSticker {
+    top: auto;
+    bottom: 0;
+    right: 20px;
+    width: 90px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .newSticker {
+    top: auto;
+    bottom: 0;
+    right: 20px;
+    width: 110px;
+    height: 110px;
+  }
+}
