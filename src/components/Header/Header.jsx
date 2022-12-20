@@ -8,6 +8,9 @@ import { useTranslation } from "react-i18next";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
 
+import newStickerHun from "../../assets/Images_for_web/newHunSticker.png";
+import newRomSticker from "../../assets/Images_for_web/newRomSticker.png";
+
 export const Header = () => {
   const { t, i18n } = useTranslation();
   return (
@@ -15,6 +18,23 @@ export const Header = () => {
       {/* zoom_in */}
       <div className="header_main">
         <div className="header_comp-motto">
+          <a href="#linening">
+            {i18n.language === "ro" ? (
+              <motion.img
+                src={newRomSticker}
+                alt="new sticker"
+                className="newSticker"
+                whileHover={{ scale: 1.2, rotate: -20 }}
+              />
+            ) : (
+              <motion.img
+                src={newStickerHun}
+                alt="new sticker"
+                className="newSticker"
+                whileHover={{ scale: 1.2, rotate: -20 }}
+              />
+            )}
+          </a>
           <h1>S.C. CLEAN SPEED S.R.L.</h1>
           <h2>TARGU MURES, STR. BOGATEI, NR. 21</h2>
           <h3>{t("header_motto")}</h3>

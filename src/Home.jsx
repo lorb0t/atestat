@@ -17,7 +17,7 @@ export const Home = () => {
         <About />
       </div>
 
-      <div id="linening">
+      <div>
         <Lineing />
       </div>
 

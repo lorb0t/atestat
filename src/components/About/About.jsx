@@ -31,7 +31,7 @@ export const About = () => {
             </a>
           </div>
           <div className="instagram">
-            <a href="#">
+            <a href="#" id="linening">
               <FontAwesomeIcon icon={faInstagram} className="to-insta" />
             </a>
           </div>

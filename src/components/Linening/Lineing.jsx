@@ -22,16 +22,15 @@ const Lineing = () => {
     <div className="line_main_bg" ref={ref}>
       <div className="line_content_left linening_show">
         <h1>
-          Incepeund din <span className="linening_show_span">2023</span>
+          {t("incepund")} <span className="linening_show_span">2023</span>
         </h1>
-        <h2>Remediere cu a noua technologie</h2>
+        <h2>{t("remediere")}</h2>
         <button className="learn-more">
           <span className="circle" aria-hidden="true">
             <span className="icon arrow"></span>
           </span>
           <span className="button-text">
-            {/* <Link to="/dugulas/">{t("learnMoreButton")}</Link> */}
-            <Link to="">In curand...</Link>
+            <Link to="">{t("soon")}</Link>
           </span>
         </button>
       </div>
@@ -49,7 +48,7 @@ const Lineing = () => {
             }`}
           >
             {/* <h1>{t("Lineing.new")}</h1> */}
-            <h1>nou</h1>
+            <h1>{t("new")}</h1>
           </div>
         </motion.div>
 
