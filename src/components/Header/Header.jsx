@@ -60,8 +60,8 @@ export const Header = () => {
             { name: t("cont3"), id: "cont3" },
             { name: t("cont4"), id: "cont4" },
             { name: t("cont5"), id: "cont5" },
-            { name: t("cont5"), id: "cont5" },
-            { name: t("cont5"), id: "cont5" },
+            { name: t("cont6"), id: "cont6" },
+            { name: t("cont7"), id: "cont7" },
           ].map((item) => (
             <Link
               activeClass="active"
