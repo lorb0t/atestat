@@ -122,6 +122,7 @@
     }
     @media (max-width: 1090px) {
       flex-direction: column;
+      width: -moz-fit-content;
       width: fit-content;
       background: rgba(0, 0, 0, 0);
       img {
@@ -245,12 +246,11 @@
   }
 }
 
-
 .my-button {
   display: block;
   width: 115px;
   height: 25px;
-  background: #4E9CAF;
+  background: #4e9caf;
   padding: 10px;
   text-align: center;
   border-radius: 5px;
