@@ -11,6 +11,12 @@ import { motion } from "framer-motion";
 import newStickerHun from "../../assets/Images_for_web/newHunSticker.png";
 import newRomSticker from "../../assets/Images_for_web/newRomSticker.png";
 
+
+import img3_magyar from "../../assets/Images_for_web/before-after-icon_white_magyar.png";
+import img3_roman from "../../assets/Images_for_web/before-after-icon_white_roman.png";
+import ken from "../../assets/Images_for_web/ken1.jpeg";
+import ken1 from "../../assets/Images_for_web/ken2.jpeg";
+
 export const Header = () => {
   const { t, i18n } = useTranslation();
   return (
@@ -52,7 +58,17 @@ export const Header = () => {
               </Link>
             </button>
           </motion.div>
+
+        <div className="header_in">
+        <div className="mainimg3">
+           <img className="kerekit" src={ken} alt="ken" />
+           <img className="eltol" src={img3_roman} alt="img3ro" />
+           <img className="kerekit" src={ken1} alt="ken1" />
+           </div>
+          </div>
         </div>
+
+
         <div className="header_services">
           {[
             { name: t("cont1"), id: "cont1" },
