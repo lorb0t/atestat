@@ -11,6 +11,7 @@ export const Home = () => {
     <div>
       <div className="header__bg" id="home">
         <Header />
+        
       </div>
 
       <div className="about_stuff" id="about">
