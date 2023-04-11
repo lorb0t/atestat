@@ -158,40 +158,35 @@ export const Servic = () => {
                     </span>
                   </button>
                 </div>
-                
 
-
-                    {/* $################################################################################################################## */}
-
-
-
+                {/* $################################################################################################################## */}
 
                 <div className="img-container">
                   <img src={img6} alt="picture" className="servic-img" />
                 </div>
-              
-              
+
                 <div className="horizontal-line"></div>
-              <div className="4container container-right container" id="cont7">
-                <div className="text-container" ref={cont4.ref}>
-                  <h3>{t("camera_cim")}</h3>
-                  <p>{t("camera1")}</p>
-                  <button className="learn-more">
-                    <span className="circle" aria-hidden="true">
-                      <span className="icon arrow"></span>
-                    </span>
-                    <span className="button-text">
-                      <Link to="/camera/">{t("learnMoreButton")}</Link>
-                    </span>
-                  </button>
+                <div
+                  className="4container container-right container"
+                  id="cont7"
+                >
+                  <div className="text-container" ref={cont4.ref}>
+                    <h3>{t("camera_cim")}</h3>
+                    <p>{t("camera1")}</p>
+                    <button className="learn-more">
+                      <span className="circle" aria-hidden="true">
+                        <span className="icon arrow"></span>
+                      </span>
+                      <span className="button-text">
+                        <Link to="/camera/">{t("learnMoreButton")}</Link>
+                      </span>
+                    </button>
+                  </div>
+                  <div className="img-container">
+                    <img src={img7} alt="picture" className="servic-img" />
+                  </div>
                 </div>
-                <div className="img-container">
-                  <img src={img7} alt="picture" className="servic-img" />
-                </div>
-              
-              </div></div>
-      
-              
+              </div>
             </div>
             {/* $################################################################################################################## */}
           </>
@@ -323,12 +318,10 @@ export const Servic = () => {
                 >
                   <img src={img5} alt="picture" className="servic-img" />
                 </motion.div>
-                
               </div>
 
-             {/* $################################################################################################################## */}
-              
-              
+              {/* $################################################################################################################## */}
+
               <div className="4container container-right container" id="cont6">
                 <motion.div
                   className="img-container"
@@ -349,7 +342,7 @@ export const Servic = () => {
                       <span className="icon arrow"></span>
                     </span>
                     <span className="button-text">
-                      <Link to="/szenyviz">{t("learnMoreButton")}</Link>
+                      <Link to="/csotisztitas">{t("learnMoreButton")}</Link>
                     </span>
                   </button>
                 </div>
@@ -363,7 +356,7 @@ export const Servic = () => {
                       <span className="icon arrow"></span>
                     </span>
                     <span className="button-text">
-                      <Link to="/nodig">{t("learnMoreButton")}</Link>
+                      <Link to="/nodigTheOtherOne">{t("learnMoreButton")}</Link>
                     </span>
                   </button>
                 </div>
@@ -384,7 +377,5 @@ export const Servic = () => {
         )}
       </div>
     </>
-
-    // TODO: Röwşen
   );
 };

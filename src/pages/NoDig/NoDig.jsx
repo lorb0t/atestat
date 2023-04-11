@@ -5,7 +5,7 @@ import img3 from "../../assets/Images/shortliner1.png";
 import img1 from "../../assets/Images/shortliner_wood_cut.png";
 import img2 from "../../assets/Images/inliner.png";
 
-export const NoDig = ({}) => {
+export const NoDig = () => {
   const { t, i18n } = useTranslation();
 
   const language = i18n.language;

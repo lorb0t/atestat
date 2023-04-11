@@ -31,6 +31,8 @@ import { PageGallery } from "./pages/PageGallery/PageGallery";
 
 import magyar from "./assets/Images_for_web/magyar.svg";
 import roman from "./assets/Images_for_web/roman.svg";
+import Csotisztit from "./pages/Csotisztit/Csotisztit";
+import NoDigTheOther from "./pages/NoDigTheOther/NoDigTheOther";
 // ###############Learn More Import#########################
 
 const App = ({}) => {
@@ -93,6 +95,8 @@ const App = ({}) => {
           <Route path="/nodig" element={<NoDig />} />
           <Route path="/camera" element={<Camera />} />
           <Route path="/meres" element={<Meres />} />
+          <Route path="/csotisztitas" element={<Csotisztit />} />
+          <Route path="/nodigTheOtherOne" element={<NoDigTheOther />} />
           <Route path="/gallery" element={<PageGallery />} />
         </Routes>
 
