@@ -134,7 +134,7 @@ export const Footer = () => {
               style={{ color: "white", cursor: "pointer" }}
               onClick={scroll.scrollToTop}
             >
-              © 2022 Clean Speed&nbsp;&nbsp;&nbsp;
+              © 2023 Clean Speed&nbsp;&nbsp;&nbsp;
             </span>
             Created by:{" "}
             <span>

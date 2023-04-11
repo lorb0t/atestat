@@ -30,8 +30,8 @@ export const Camera = ({}) => {
           <img src={img2} alt="" />
         </div>
         <div className="text-text">
-          <h1>{t("camera_cim")}  </h1>
-          <a className="my-button" href="./CCTV.pdf" download="CCTV.pdf">Download</a>
+          <h1>{t("camera_cim")} <button><a className="" href="./CCTV.pdf" download>Download</a></button> </h1>
+          
           <p>{t("camera1")}</p>
           <p>{t("camera2")}</p>
           <h2>{t("camera3")}</h2>

@@ -11,6 +11,8 @@ import img2 from "../../assets/Images/szenyviz_szippantas.png";
 import img3 from "../../assets/Images/Remediere_conducta_fara_sapare_Inliner.jpg";
 import img4 from "../../assets/Images/robot.jpg";
 import img5 from "../../assets/Images/emberker_with_ultrasonic.jpg";
+import img6 from "../../assets/Images/frez.jpeg";
+import img7 from "../../assets/Images/frez1.jpeg";
 import corner1line from "../../assets/Images_for_web/corner1line.svg";
 
 export const Servic = () => {
@@ -27,6 +29,12 @@ export const Servic = () => {
     threshold: 0,
   });
   const cont5 = useInView({
+    threshold: 0,
+  });
+  const cont6 = useInView({
+    threshold: 0,
+  });
+  const cont7 = useInView({
     threshold: 0,
   });
 
@@ -136,6 +144,54 @@ export const Servic = () => {
                   <img src={img5} alt="picture" className="servic-img" />
                 </div>
               </div>
+              <div className="horizontal-line"></div>
+              <div className="3container container-left container" id="cont6">
+                <div className="text-container" ref={cont6.ref}>
+                  <h3>{t("frez")}</h3>
+                  <p>{t("frez1")}</p>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
+                    </span>
+                    <span className="button-text">
+                      <Link to="/meres/">{t("learnMoreButton")}</Link>
+                    </span>
+                  </button>
+                </div>
+                
+
+
+                    {/* $################################################################################################################## */}
+
+
+
+
+                <div className="img-container">
+                  <img src={img6} alt="picture" className="servic-img" />
+                </div>
+              
+              
+                <div className="horizontal-line"></div>
+              <div className="4container container-right container" id="cont7">
+                <div className="text-container" ref={cont4.ref}>
+                  <h3>{t("camera_cim")}</h3>
+                  <p>{t("camera1")}</p>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
+                    </span>
+                    <span className="button-text">
+                      <Link to="/camera/">{t("learnMoreButton")}</Link>
+                    </span>
+                  </button>
+                </div>
+                <div className="img-container">
+                  <img src={img7} alt="picture" className="servic-img" />
+                </div>
+              
+              </div></div>
+      
+              
             </div>
             {/* $################################################################################################################## */}
           </>
@@ -266,6 +322,61 @@ export const Servic = () => {
                   transition={{ duration: 1.5 }}
                 >
                   <img src={img5} alt="picture" className="servic-img" />
+                </motion.div>
+                
+              </div>
+
+             {/* $################################################################################################################## */}
+              
+              
+              <div className="4container container-right container" id="cont6">
+                <motion.div
+                  className="img-container"
+                  initial={{ x: "-40vw" }}
+                  animate={{
+                    x: `${cont6.inView ? 0 : "-35vw"}`,
+                    visibility: `${cont6.inView ? "visible" : "hidden"}`,
+                  }}
+                  transition={{ duration: 1.5 }}
+                >
+                  <img src={img6} alt="picture" className="servic-img" />
+                </motion.div>
+                <div className="text-container" ref={cont6.ref}>
+                  <h3>{t("frez")}</h3>
+                  <p>{t("frez1")}</p>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
+                    </span>
+                    <span className="button-text">
+                      <Link to="/szenyviz">{t("learnMoreButton")}</Link>
+                    </span>
+                  </button>
+                </div>
+              </div>
+              <div className="5container container-left container" id="cont7">
+                <div className="text-container" ref={cont7.ref}>
+                  <h3>{t("nodig_cim")}</h3>
+                  <p>{t("nodig1")}</p>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
+                    </span>
+                    <span className="button-text">
+                      <Link to="/nodig">{t("learnMoreButton")}</Link>
+                    </span>
+                  </button>
+                </div>
+                <motion.div
+                  className="img-container"
+                  initial={{ x: "40vw" }}
+                  animate={{
+                    x: `${cont7.inView ? 0 : "35vw"}`,
+                    visibility: `${cont7.inView ? "visible" : "hidden"}`,
+                  }}
+                  transition={{ duration: 1.5 }}
+                >
+                  <img src={img7} alt="picture" className="servic-img" />
                 </motion.div>
               </div>
             </div>
