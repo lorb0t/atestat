@@ -349,8 +349,11 @@ export const Servic = () => {
               </div>
               <div className="5container container-left container" id="cont7">
                 <div className="text-container" ref={cont7.ref}>
-                  <h3>{t("nodig_cim")}</h3>
-                  <p>{t("nodig1")}</p>
+                  <h3>{t("reab")}</h3>
+                  <p>{t("reab1")}</p>
+                  <p>{t("reab2")}</p>
+                  <p>{t("reab3")}</p>
+                 
                   <button className="learn-more">
                     <span className="circle" aria-hidden="true">
                       <span className="icon arrow"></span>
