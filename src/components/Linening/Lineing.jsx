@@ -18,6 +18,14 @@ const Lineing = () => {
   });
   const [first, setFirst] = useState(true);
 
+  useEffect(() => {
+      setTimeout(
+        ()=>{setFirst(!first);
+        }, 3000
+      )
+  })
+  
+
   return (
     <div className="line_main_bg" ref={ref}>
       <div className="line_content_left linening_show">
@@ -51,7 +59,7 @@ const Lineing = () => {
               <span className="icon arrow"></span>
             </span>
             <span className="button-text">
-              <Link to="">{t("soon")}</Link>
+              <Link to="/linening">{t("soon")}</Link>
             </span>
           </button>
         ) : (

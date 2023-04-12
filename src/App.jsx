@@ -33,6 +33,7 @@ import magyar from "./assets/Images_for_web/magyar.svg";
 import roman from "./assets/Images_for_web/roman.svg";
 import Csotisztit from "./pages/Csotisztit/Csotisztit";
 import NoDigTheOther from "./pages/NoDigTheOther/NoDigTheOther";
+import Linening from "./pages/Linening/Linening";
 // ###############Learn More Import#########################
 
 const App = ({}) => {
@@ -97,6 +98,8 @@ const App = ({}) => {
           <Route path="/meres" element={<Meres />} />
           <Route path="/csotisztitas" element={<Csotisztit />} />
           <Route path="/nodigTheOtherOne" element={<NoDigTheOther />} />
+          <Route path="/linening" element={<Linening />} />
+          
           <Route path="/gallery" element={<PageGallery />} />
         </Routes>
 

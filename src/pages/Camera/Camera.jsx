@@ -14,6 +14,9 @@ export const Camera = ({}) => {
 
   const vid_size = "400px";
 
+
+
+
   useEffect(() => {
     setTimeout(() => {
       console.log("ran");
@@ -32,9 +35,8 @@ export const Camera = ({}) => {
         <div className="text-text">
           <h1>
             {t("camera_cim")}{" "}
-            <a className="" href="./CCTV.pdf" download>
-              Download
-            </a>
+            
+            <a href="/CCTV.pdf" download>asd</a>
           </h1>
 
           <p>{t("camera1")}</p>
