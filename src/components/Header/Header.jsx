@@ -59,6 +59,7 @@ export const Header = () => {
           </motion.div>
 
           <div className="header_in">
+            <h3>{t("has")}</h3>
             <div className="mainimg3">
               <img className="kerekit" src={ken} alt="ken" />
               {"ro" === i18n.language ? (
@@ -70,7 +71,7 @@ export const Header = () => {
             </div>
           </div>
         </div>
-
+         <div className="letol">
         <div className="header_services">
           {[
             { name: t("cont1"), id: "cont1" },
@@ -93,7 +94,7 @@ export const Header = () => {
             >
               {item.name}
             </Link>
-          ))}
+          ))}</div>
         </div>
       </div>
     </div>
