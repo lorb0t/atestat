@@ -5,6 +5,14 @@ import img3 from "../../assets/Images/video_panel.png";
 import img2 from "../../assets/Images/camera2.png";
 import img1 from "../../assets/Images/robot_trip.png";
 
+
+
+
+
+
+
+
+
 export const Camera = ({}) => {
   const { t, i18n } = useTranslation();
   const language = () => {
@@ -35,8 +43,18 @@ export const Camera = ({}) => {
         <div className="text-text">
           <h1>
             {t("camera_cim")}{" "}
-            
-            <a href="/CCTV.pdf" download>asd</a>
+              
+          <button className="mergeslettem">
+            <span className="circle" aria-hidden="true">
+              <span className="icon arrow"></span>
+            </span>
+            <span className="button-text">
+              <a href="/CCTV.pdf" download>{t("exi")}</a>
+            </span>
+          </button>
+
+
+           
           </h1>
 
           <p>{t("camera1")}</p>

@@ -5,25 +5,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 115vh;
+  height: auto;
   width: 100%;
+  
 
   @media (max-width: 1000px) {
     height: fit-content;
   }
 
+ 
+ 
   .header_main {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    
+    padding-bottom: 2rem;
 
     .header_comp-motto {
       position: relative;
       color: white;
       margin-left: 5%;
       margin-top: 8%;
-
+      
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -79,9 +82,9 @@
       cursor: pointer;
 
       background-color: rgba(0, 0, 0, 0.45);
-      border-top: 6px solid orange;
-      border-radius: 8px;
-      padding: 2rem;
+      border-top: 6px solid rgb(9, 9, 155);
+      border-radius:24% 24% 20% 20% ;
+      padding: 1rem;
 
       width: -moz-fit-content;
       width: fit-content;
@@ -91,7 +94,9 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-
+      h4{
+        margin-left: 8rem;
+      }
       a {
         text-decoration: none;
         color: var(--color-text);
@@ -110,6 +115,7 @@
       }
       @media (max-width: 1090px) {
           display: none;
+          
         }
       
     }
@@ -133,9 +139,9 @@
       cursor: pointer;
 
       background-color: rgba(0, 0, 0, 0.45);
-      border-top: 6px solid orange;
-      border-radius: 8px;
-      padding: 2rem;
+      border-top: 6px solid  rgb(9, 9, 155);
+      border-radius: 14%;
+      padding: 2.3rem;
       width: -moz-fit-content;
       width: fit-content;
       margin: 9% 5% 2% 5%;

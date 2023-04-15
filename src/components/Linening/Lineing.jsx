@@ -53,18 +53,21 @@ const Lineing = () => {
           {t("incepund")} <span className="linening_show_span">2023</span>
         </h1>
         <h2>{t("remediere")}</h2>
+         <h4>{t("blu1")}</h4>
+         <h4>{t("blu2")}</h4>
         {window.screen.width > 1250 ? (
           <button className="learn-more">
             <span className="circle" aria-hidden="true">
               <span className="icon arrow"></span>
             </span>
             <span className="button-text">
-              <Link to="/linening">{t("soon")}</Link>
+              <Link to="/linening">{t("learnMoreButton")}</Link>
             </span>
           </button>
         ) : (
           ""
         )}
+       
       </div>
       <div className="line_content">
         {window.screen.width > 1250 ? (
@@ -73,7 +76,7 @@ const Lineing = () => {
             animate={{
               y: `${inView ? -40 : -50}`,
             }}
-            transition={{ duration: 3 }}
+            transition={{ duration: 3}}
           >
             <div
               className={`line_new footer-heading-img ${
@@ -87,14 +90,38 @@ const Lineing = () => {
         ) : (
           ""
         )}
-
+ 
         <div
           className={`line_content_img ${inView ? "change_op" : "normal_op"}`}
         >
           <img src={liner} alt="Liner machine" />
         </div>
+        
+
+
+  
+      <div className="line_content_left">
+        {window.screen.width < 1250 ? (
+          <button className="learn-more">
+            <span className="circle" aria-hidden="true">
+              <span className="icon arrow"></span>
+            </span>
+            <span className="button-text">
+              <Link to="/linening">{t("learnMoreButton")}</Link>
+            </span>
+          </button>
+        ) : (
+          ""
+        )}
+        </div>
+
+
+
+
+
+
       </div>
-      <div className="line_content_right" onClick={() => setFirst(!first)}>
+      <div className="line_content_right" >
         <div className="line_content_right_images">
           <AnimatePresence>
             {first ? (
@@ -121,11 +148,7 @@ const Lineing = () => {
               />
             )}
           </AnimatePresence>
-          <img
-            src={click_finger}
-            alt="click finger"
-            className="line_click_finger"
-          />
+         
         </div>
       </div>
     </div>

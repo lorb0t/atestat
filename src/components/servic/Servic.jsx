@@ -145,7 +145,7 @@ export const Servic = () => {
                 </div>
               </div>
               <div className="horizontal-line"></div>
-              <div className="3container container-left container" id="cont6">
+              <div className="6container container-left container" id="cont6">
                 <div className="text-container" ref={cont6.ref}>
                   <h3>{t("frez")}</h3>
                   <p>{t("frez1")}</p>
@@ -154,31 +154,38 @@ export const Servic = () => {
                       <span className="icon arrow"></span>
                     </span>
                     <span className="button-text">
-                      <Link to="/meres/">{t("learnMoreButton")}</Link>
+                      <Link to="/csotisztitas/">{t("learnMoreButton")}</Link>
                     </span>
                   </button>
                 </div>
-
+             
                 {/* $################################################################################################################## */}
 
                 <div className="img-container">
                   <img src={img6} alt="picture" className="servic-img" />
                 </div>
+              </div>
 
-                <div className="horizontal-line"></div>
+
+                <div className="horizontal-line asd"></div>
                 <div
-                  className="4container container-right container"
+                  className="7container container-right container"
                   id="cont7"
-                >
+                > 
                   <div className="text-container" ref={cont4.ref}>
-                    <h3>{t("camera_cim")}</h3>
-                    <p>{t("camera1")}</p>
+                   
+                    <h3>{t("epo1")}</h3>
+                    
+                       <p>-{t("epo2")}</p>
+                       <p>-{t("epo3")}</p>
+                       <p>-{t("epo4")}</p>
+                        
                     <button className="learn-more">
                       <span className="circle" aria-hidden="true">
                         <span className="icon arrow"></span>
                       </span>
                       <span className="button-text">
-                        <Link to="/camera/">{t("learnMoreButton")}</Link>
+                        <Link to="/noDigTheOtherone/">{t("learnMoreButton")}</Link>
                       </span>
                     </button>
                   </div>
@@ -186,8 +193,9 @@ export const Servic = () => {
                     <img src={img7} alt="picture" className="servic-img" />
                   </div>
                 </div>
-              </div>
-            </div>
+
+             </div>
+            
             {/* $################################################################################################################## */}
           </>
         ) : (
@@ -202,7 +210,7 @@ export const Servic = () => {
                       <span className="icon arrow"></span>
                     </span>
                     <span className="button-text">
-                      <Link to="/dugulas/">{t("learnMoreButton")}</Link>
+                      <Link to="/nodigTheOtherOne/">{t("learnMoreButton")}</Link>
                     </span>
                   </button>
                 </div>
@@ -322,7 +330,7 @@ export const Servic = () => {
 
               {/* $################################################################################################################## */}
 
-              <div className="4container container-right container" id="cont6">
+              <div className="6container container-right container" id="cont6">
                 <motion.div
                   className="img-container"
                   initial={{ x: "-40vw" }}
@@ -347,7 +355,7 @@ export const Servic = () => {
                   </button>
                 </div>
               </div>
-              <div className="5container container-left container" id="cont7">
+              <div className="7container container-left container" id="cont7">
                 <div className="text-container" ref={cont7.ref}>
                   <h3>{t("reab")}</h3>
                   <p>{t("reab1")}</p>

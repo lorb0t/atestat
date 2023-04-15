@@ -74,7 +74,7 @@
     margin: 0;
     align-items: center;
     justify-content: center;
-
+   
     display: inline-grid;
     padding-bottom: 2%;
   }
@@ -360,6 +360,9 @@ $black: #282936;
   margin-top: 20px;
   border: 1.5px solid rgb(187, 182, 182);
   width: 100%;
+}
+.asd{
+  border: 1.5px solid rgb(163, 155, 155);
 }
 // @supports (display: grid) {
 //   body {

@@ -59,7 +59,7 @@ export const Header = () => {
           </motion.div>
 
           <div className="header_in">
-            <h3>{t("has")}</h3>
+            <h4>{t("has")}</h4>
             <div className="mainimg3">
               <img className="kerekit" src={ken} alt="ken" />
               {"ro" === i18n.language ? (
